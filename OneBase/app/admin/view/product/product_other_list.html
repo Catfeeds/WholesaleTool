@@ -1,0 +1,76 @@
+<div class="box">
+  <div class="box-header">
+    <!--<ob_link><a class="btn" href="{:url('productAdd')}"><i class="fa fa-plus"></i> 新 增</a></ob_link>-->
+
+    <div class="box-tools">
+        <div class="input-group input-group-sm search-form">
+            <label >商品类型:&nbsp;&nbsp;&nbsp;</label>
+            <select name="product_type" style="height: 30px;border-color: #ccc;border-radius: 2px;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)" >
+                <option value="0" {if condition="input('product_type') eq 0 "}selected{/if} >联合利华</option>
+                <option value="1" {if condition="input('product_type') eq 1 "}selected{/if} >其他商品</option>
+            </select>
+
+            <input name="search_data" class="pull-right search-input" value="{:input('search_data')}" placeholder="请输入商品名称" type="text">
+            <div class="input-group-btn">
+              <button type="button" id="search" url="{:url('productList')}" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <br/>
+  </div>
+  <div class="box-body table-responsive">
+    <table  class="table table-bordered table-hover">
+      <thead>
+      <tr>
+          <th class="checkbox-select-all">
+              <label>
+                <input class="flat-grey js-checkbox-all" type="checkbox">
+              </label>
+          </th>
+          <th>ID</th>
+          <th>产品名称</th>
+          <th>单位</th>
+          <th>创建时间</th>
+          <th>修改时间</th>
+          <th class="status-th">状态</th>
+          <th>操作</th>
+      </tr>
+      </thead>
+
+      {notempty name='list'}
+        <tbody>
+            {volist name='list' id='vo'}
+                <tr>
+                  <td>
+                    <label>
+                        <input class="flat-grey" type="checkbox" name="ids" value="{$vo.id}">
+                    </label>
+                  </td>
+                  <td>{$vo.id}</td>
+                  <td>{$vo.product_name}</td>
+                  <td>{$vo.sku_unit}</td>
+                  <td>{$vo.created_at}</td>
+                  <td>{$vo.updated_at}</td>
+                  <td><ob_link><a class="ajax-get" href="{:url('setStatus', array('ids' => $vo['id'], 'status' => (int)!$vo['status'],'product_type'=>1))}">{$vo.status_text}</a></ob_link></td>
+                  <td class="col-md-2 text-center">
+                      <!--<ob_link><a href="{:url('productEdit', array('id' => $vo['id']))}" class="btn "><i class="fa fa-edit"></i> 编辑</a></ob_link>-->
+                      <ob_link><a class="btn confirm ajax-get" href="{:url('setStatus', array('ids' => $vo['id'], 'status' => $Think.DATA_DELETE,'product_type'=>1))}"><i class="fa fa-trash-o"></i> 删 除</a></ob_link>
+                  </td>
+                </tr>
+            {/volist}
+        </tbody>
+        {else/}
+        <tbody><tr class="odd"><td colspan="11" class="text-center" valign="top">{:config('empty_list_describe')}</td></tr></tbody>
+      {/notempty}
+    </table>
+
+      <div class="lockscreen-footer">
+          <ob_link><a class="btn batch_btn confirm ajax-post" value="{$Think.DATA_NORMAL}"  href="{:url('setStatus',array('product_type'=>1))}"><i class="fa fa-check-circle"></i> 启 用</a></ob_link>
+          <ob_link><a class="btn batch_btn confirm ajax-post" value="{$Think.DATA_DISABLE}" href="{:url('setStatus',array('product_type'=>1))}"><i class="fa fa-times-circle"></i> 禁 用</a></ob_link>
+          <ob_link><a class="btn batch_btn confirm ajax-post" value="{$Think.DATA_DELETE}"  href="{:url('setStatus',array('product_type'=>1))}"><i class="fa fa-trash"></i> 删 除</a></ob_link>
+      </div>
+  </div>
+  <div class="box-footer clearfix text-center">
+      {$list->render()}
+  </div>
+</div>

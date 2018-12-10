@@ -1,0 +1,25 @@
+<view class='container'>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+          <block wx:if="{{ resultStatus==0 }}">
+            <view class="title_1">抱歉!</view>
+            <view class="title_2">您所在的地区尚未开展业务！</view>
+            <view class="title_3">如有任何问题请联系客服</view>
+            <view class="title_4" bindtap="call">021-34159566</view>
+          </block>
+          <block wx:else>
+            <view class="title_1">恭喜，您已注册成功！</view>
+            <view class="title_2">稍后客服与您联系确认供应商信息。</view>
+            <view class="title_3">如有任何问题请联系客服</view>
+            <view class="title_4" bindtap="call">021-34159566</view>
+          </block>
+
+      </view>
+
+    </view>
+
+
+</view>

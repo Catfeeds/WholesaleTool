@@ -1,0 +1,1 @@
+RewriteRule /a1$ a1.html [NC,L]

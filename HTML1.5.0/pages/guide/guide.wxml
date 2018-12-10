@@ -1,0 +1,19 @@
+<!--pages/index/guide.wxml-->
+<!-- <text>pages/index/guide.wxml</text> -->
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'></text>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgs}}" wx:for-index="index">
+    <swiper-item class="swiper-items">
+      <image class="swiper-image" src="{{item}}"  bindtap="start"></image>
+      <!-- <button class="button-img" bindtap="start" wx:if="{{index == imgs.length - 1}}">立即体验</button> -->
+    </swiper-item>
+  </block>
+</swiper>

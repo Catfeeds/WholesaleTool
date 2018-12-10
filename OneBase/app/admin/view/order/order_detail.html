@@ -1,0 +1,56 @@
+<div class="box">
+
+    <div class="box-body table-responsive">
+        <table  class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th class="checkbox-select-all">
+                    <label>
+                        <input class="flat-grey js-checkbox-all" type="checkbox">
+                    </label>
+                </th>
+                <th>ID</th>
+                <th>产品名称</th>
+                <!--<th>终端用户</th>-->
+                <!--<th>供应商</th>-->
+                <th>产品图片</th>
+                <th>产品规格</th>
+                <th>产品数量</th>
+                <th>产品单价</th>
+                <th>是否联合利华产品</th>
+                <!--<th>操作</th>-->
+            </tr>
+            </thead>
+
+            {notempty name='list'}
+            <tbody>
+            {volist name='list' id='vo'}
+            <tr>
+                <td>
+                    <label>
+                        <input class="flat-grey" type="checkbox" name="ids" value="{$vo.id}">
+                    </label>
+                <td>{$vo.product_id}</td>
+                <td>{$vo.product_name}</td>
+                <td>
+                    <img class="admin-list-img-size" src="{$vo.uploaded_img}"/>
+                </td>
+                <td>{$vo.sku_code}-{$vo.sku_unit}</td>
+                <td>{$vo.product_count}</td>
+                <td>{$vo.product_price}</td>
+                <td>{if condition="$vo.is_unlieve eq 1"}是{elseif condition="$vo.is_unlieve eq 0" /}否{else /}未知{/if}</td>
+
+            </tr>
+            {/volist}
+            </tbody>
+            {else/}
+            <tbody><tr class="odd"><td colspan="8" class="text-center" valign="top">{:config('empty_list_describe')}</td></tr></tbody>
+            {/notempty}
+        </table>
+
+        <a class="btn" onclick="javascript:history.back(-1);return false;"><i class="fa fa-history"></i> 返 回</a>    </div>
+
+    <div class="box-footer clearfix text-center">
+        {$list->render()}
+    </div>
+</div>

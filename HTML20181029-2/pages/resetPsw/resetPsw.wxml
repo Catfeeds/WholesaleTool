@@ -1,0 +1,21 @@
+<view class='container'>
+    <image class="image" src='/static/images/juxing.png' />
+    <view class="title_bgName" style="position:relative;top:30px">欢迎使用订单助手！</view>
+    <view class="table">
+        <view class='form'>
+            <view class="tip">请立即设置新密码保证用户安全</view>
+            <view class="table_inp">
+                <image class="icon" src='/static/images/password.png'></image>
+                <input class="input" placeholder-class="placeholder" placeholder='请输入新密码' bindinput='password' password="true"></input>
+            </view>
+            <view class="table_inp">
+                <image class="icon" src='/static/images/password.png'></image>
+                <input class="input" placeholder-class="placeholder" placeholder='请确认新密码' bindinput='password_confirm' password="true"></input>
+            </view>
+            <!-- 自定义组件 -->
+            <view class="login" bindtap="resetPwd">
+                确认
+            </view>
+        </view>
+    </view>
+</view>

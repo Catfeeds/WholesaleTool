@@ -1,0 +1,272 @@
+---------------------------------------------------------------
+[ 2018-11-22T15:55:25+08:00 ] 127.0.0.1 GET /admin.php/order/index/index?sort=id&order=desc&offset=10&limit=10&filter=%7B%7D&op=%7B%7D&_=1542795530417
+[ info ] www.snaketest.com/admin.php/order/index/index?sort=id&order=desc&offset=10&limit=10&filter=%7B%7D&op=%7B%7D&_=1542795530417 [运行时间：0.236765s][吞吐率：4.22req/s] [内存消耗：3,374.77kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000639s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003152s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order.index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.snaketest.com/admin.php/order/index/index?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '10',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542795530417',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003245s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/order/index.php
+[ info ] [ RUN ] app\admin\controller\order\Index->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\order\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000484s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037053s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.054456s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.009984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.012179s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_order` [ RunTime:0.012889s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 1 [ RunTime:0.003427s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 10,10 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_supplier` [ RunTime:0.012574s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_user` [ RunTime:0.012082s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2018-11-22T15:55:27+08:00 ] 127.0.0.1 GET /admin.php/order/index/index?sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1542795530418
+[ info ] www.snaketest.com/admin.php/order/index/index?sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1542795530418 [运行时间：0.137785s][吞吐率：7.26req/s] [内存消耗：3,374.79kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002755s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order.index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.snaketest.com/admin.php/order/index/index?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '20',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542795530418',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001602s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/order/index.php
+[ info ] [ RUN ] app\admin\controller\order\Index->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\order\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000387s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012111s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.018038s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.011359s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_order` [ RunTime:0.013985s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 20,10 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_supplier` [ RunTime:0.011590s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_user` [ RunTime:0.011889s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000262s ]
+---------------------------------------------------------------
+[ 2018-11-22T15:55:29+08:00 ] 127.0.0.1 GET /admin.php/order/index/index?sort=id&order=desc&offset=30&limit=10&filter=%7B%7D&op=%7B%7D&_=1542795530419
+[ info ] www.snaketest.com/admin.php/order/index/index?sort=id&order=desc&offset=30&limit=10&filter=%7B%7D&op=%7B%7D&_=1542795530419 [运行时间：0.133787s][吞吐率：7.47req/s] [内存消耗：3,374.79kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002796s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order.index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'referer' => 'http://www.snaketest.com/admin.php/order/index/index?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '30',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542795530419',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002187s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/order/index.php
+[ info ] [ RUN ] app\admin\controller\order\Index->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\order\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000333s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011212s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.017655s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.011606s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_order` [ RunTime:0.011630s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 30,10 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_supplier` [ RunTime:0.011266s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_user` [ RunTime:0.011176s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000258s ]
+---------------------------------------------------------------
+[ 2018-11-22T16:43:05+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.060875s][吞吐率：16.43req/s] [内存消耗：1,600.55kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000181s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007934s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

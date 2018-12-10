@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "全部订单",
+  "enablePullDownRefresh": false,
+   "disableScroll": true,
+  "backgroundColor": "#f1e9e2",
+  "usingComponents": {
+    "zan-tab": "/component/zanui/dist/tab/index",
+    "bottomMsg": "/component/bottomMsg/bottomMsg"
+  }
+}

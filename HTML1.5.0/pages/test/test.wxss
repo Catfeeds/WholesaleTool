@@ -1,0 +1,11 @@
+/* pages/test/test.wxss */
+
+.test{
+  width: 500rpx;
+  height: 60rpx;
+  text-align: center;
+  background-color: #6ec06e;
+  color: #fff;
+  margin: 100rpx;
+  
+}

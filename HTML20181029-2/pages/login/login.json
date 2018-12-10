@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "登录/注册",
+  "usingComponents": {
+    "zan-popup": "/component/zanui/dist/popup/index",
+    "reader": "/component/reader/reader",
+    "bottomMsg": "/component/bottomMsg/bottomMsg"
+  }
+}

@@ -1,0 +1,8 @@
+
+
+<view class="content2 my-class" >
+  <text class="text_1">如有任何问题请联系客服</text>
+  <text class="text_2" bindtap="call">021-34159566 </text>
+  
+    <text class="text_1"></text>
+</view>

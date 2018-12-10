@@ -1,0 +1,207 @@
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'>客户-注册</text>
+</view>
+
+<view class='container'>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+          <!-- 姓名 -->
+          <view class="lableInput">
+            <view class="lable">姓名</view>
+            <input class="input_class" placeholder-class='placeholder-input' placeholder='输入您的姓名' bindinput ="inputName"></input>
+          </view>
+          <!-- 手机号 -->
+            <view class="lableInput">
+              <view class="lable">手机号</view>
+                <input class="input_class" placeholder-class='placeholder-input' type="number" placeholder='输入11位数字' bindinput ="inputPhone" maxlength="11"></input>
+            </view>
+          <!-- 验证码 -->
+          <view class="codeAllLine">
+            <view class="lableInput input_code">
+                  <view class="lable">验证码</view>
+                  <input class="input_class input_code_class" placeholder-class='placeholder-input' placeholder='输入验证码' bindinput   ="inputCode" type="number"></input>
+              </view>
+              <!-- <navigator class="phone_btn" target="miniProgram" app-id="wx5a3a7366fd07e119"  path="/pages/captcha/index"  extra-data="{{ {jsUrl:codeUrl} }}" >获取验证码</navigator > -->
+            
+              <!-- <view wx:else class="phone_btn phone_btn_dis" >{{ codeText }}</view> -->
+               <navigator wx:if="{{ codeShow }}"  class="phone_btn" target="miniProgram" app-id="wx5a3a7366fd07e119"  path="/pages/captcha/index"  extra-data="{{ {jsUrl:codeUrl} }}" >获取验证码</navigator >
+                <view wx:else class="phone_btn phone_btn_dis" >{{codetime}}s重复获取</view> 
+          </view>
+          <!-- 职业 -->
+          <picker class="input_class job_input_class" bindchange="bindPickerChange" value="0" range="{{array}}" range-key="name">
+            <view class="picker">
+              <text class="lable lable_job">您的职业</text>
+              <view class="picker_item">{{array[jonSelectIndex].name}}</view>
+            </view>
+          </picker>
+
+          <!-- 非供货商 -->
+          <block wx:if="{{ jonSelectIndex!=4 }}">
+              <view class="lable lable_job  ">您所在餐厅</view>
+              <!-- 手动输入/附近 -->
+              <view class="shopswitch">
+                <view class="title_t {{ shopswitch==titleIndex?'item_select':'' }}" wx:for="{{titleLable}}" wx:for-item="titleItem" wx:for-index="titleIndex">
+                    <view class="t_tab {{ shopswitch==titleIndex?'t_select':'' }}" data-shopswitch="{{ titleItem.shopswitch }}" bindtap='changeStatus'>{{ titleItem.name }}</view>
+                </view>
+              </view> 
+
+              <!-- 区域 -->
+              <!-- <input class="input_class" placeholder-class='placeholder-input' value="{{address.full_region}}" disabled="true" bindtap="chooseRegion" placeholder="省份、城市、区县"/> -->
+            <view wx:if="{{isIphone6}}">
+                <view style='width:100%;height:50rpx;'></view>
+            </view>
+            <view class="lableInput2">
+                 <input class="input_class2" placeholder-class='placeholder-input placeholder-region' value="{{regionRoutStr}}" disabled="true" bindtap="regionModel" placeholder="省份、城市、区县"/>
+            </view>
+
+               <!-- 餐厅名称 -->
+               <view class="lableInput2">
+                  <view class="lable lable2">餐厅名称</view>
+                 <input wx:if="{{ shopswitch==0 }}" class="input_class2"  disabled='true' bindtap='openSearchShop' placeholder-class='placeholder-input2' placeholder="输入餐厅名称" value="{{ shopName }}"/>
+                 <input wx:else class="input_class2"  disabled='true' placeholder-class='placeholder-input2' placeholder="输入餐厅名称" value="{{ shopName }}"/>
+               </view>
+              <!-- 具体地址 -->
+               <view class="lableInput2">
+                  <view class="lable lable2">具体地址</view>
+                  <input class="input_class2" placeholder-class='placeholder-input2' placeholder="输入具体地址" bindinput ="inputAddr" value="{{ addr }}"/>
+               </view>
+              
+               <!-- 业务类型 -->
+              <picker class="input_class job_input_class" bindchange="bindBusiChange" value="0" range="{{busiArray}}" range-key="name">
+                <view class="picker">
+                  <text class="lable lable_type">您所在餐厅的业务类型</text>
+                  <view class="picker_item">{{busiArray[busiSelectIndex].name}}</view>
+                </view>
+              </picker>
+              <!-- 人均消费 -->
+              <view class="lableInput3">
+                <text class="lable lable_type">您所在餐厅的人均消费</text>
+                <input class="input_class3" bindinput ="inputAvg" type="number" value="{{ avg }}"></input>
+                <text class="lable">元/人</text>
+              </view>
+
+          </block>
+          <!-- 供货商 -->
+          <block wx:else>
+              <!-- 门店名称 -->
+               <view class="lableInput2">
+                  <view class="lable lable2">门店名称</view>
+                 <input class="input_class2" bindinput ="inputShopName" placeholder-class='placeholder-input2' placeholder="输入门店名称" value="{{ shopName }}"/>
+               </view>
+              
+               <!-- 区域 -->
+              <!-- <input class="input_class" placeholder-class='placeholder-input' value="{{address.full_region}}" disabled="true" bindtap="chooseRegion" placeholder="省份、城市、区县"/> -->
+               <view class="lableInput2">
+                  <view class="lable lable2  ">门店地址</view>
+                 <input class="input_class2" placeholder-class='placeholder-input placeholder-region' value="{{regionRoutStr}}" disabled="true" bindtap="regionModel" placeholder="省份、城市、区县"/>
+              </view>
+               <!-- 详细地址 -->
+               <view class="lableInput2">
+                  <view class="lable lable2">详细地址</view>
+                  <input class="input_class5" placeholder-class='placeholder-input2' placeholder="输入详细地址" bindinput ="inputAddr" value="{{ addr }}"/>
+               </view>
+          </block>
+
+      </view>
+
+        <!-- 自定义组件阅读 -->
+      <reader></reader>
+       <!-- 底部消息 -->
+      <bottomMsg my-class="bottomMsgClass"></bottomMsg>
+      <view class="btn btn_2" bindtap='subForm'>提交</view>
+    
+
+      <!-- 区域选择弹框 -->
+       <view class="region-select" wx:if="{{openSelectRegion}}">
+          <view class="hd">
+            <view class="region-selected">
+              <view class="item {{item.id == 0 ? 'disabled' : ''}} {{(regionLevel -1) === index ? 'selected' : ''}}" bindtap="selectRegionLevel" data-region-level-index="{{index}}" wx:for="{{selectRegionList}}" wx:key="{{item.id}}">{{item.name}}</view>
+            </view>
+            <view class="done {{selectRegionDone ? '' : 'disabled'}}" bindtap="doneSelectRegion">确定</view>
+          </view>
+
+          <view class="bd">
+            <scroll-view scroll-y="true" class="region-list">
+              <view class="item {{item.selected ? 'selected' : ''}}" bindtap="selectRegion" data-region-index="{{index}}" wx:for="{{regionList}}" wx:key="{{item.id}}">{{item.name}}</view>
+            </scroll-view>
+          </view>
+
+        </view>
+        <view class="bg-mask" bindtap="cancelSelectRegion" wx:if="{{openSelectRegion}}"></view>
+      <!--  -->
+
+    </view>
+
+
+    <!-- 弹出层 选择区域-->
+    <zan-popup type="bottom" click-overlay="cancelRegion" show="{{ regionModel }}">
+       <view class="model_region">
+        <view class="regionTop">
+          <view class="regionTop_b" bindtap='cancelRegion'>取消</view>
+          <view class="regionTop_b regionTop_b_y" bindtap='yesRegion'>确定</view>
+        </view>
+        <view class="regionBom">
+            <!-- 省 -->
+            <picker-view indicator-style="height: 50px;" class="regionPickerV"  value="{{[regionIndex1]}}" bindchange="bindChangeRegion1">
+            <picker-view-column>
+              <view wx:for="{{regionList1}}" style="line-height: 50px">{{item.name}}</view>
+            </picker-view-column>
+          </picker-view>
+          <!-- 市 -->
+            <picker-view indicator-style="height: 50px;"  class="regionPickerV" value="{{[regionIndex2]}}" bindchange="bindChangeRegion2">
+            <picker-view-column>
+              <view wx:for="{{regionList2}}" style="line-height: 50px">{{item.name}}</view>
+            </picker-view-column>
+          </picker-view>
+          <!-- 区 -->
+            <picker-view indicator-style="height: 50px;"  class="regionPickerV" value="{{[regionIndex3]}}" bindchange="bindChangeRegion3">
+            <picker-view-column>
+              <view wx:for="{{regionList3}}" style="line-height: 50px">{{item.name}}</view>
+            </picker-view-column>
+          </picker-view>
+
+        </view>
+      </view>
+    </zan-popup>
+
+    <!-- 弹出层 跳转验证码-->
+    <!-- <zan-popup show="{{ checkCodeModel }}">
+       <view class="model_v">
+          <view class="model_1">获取验证码之前</view>
+          <view class="model_2">{{ codeUrl }}</view>
+          <navigator target="miniProgram" app-id="wx5a3a7366fd07e119"  path="/pages/captcha/index"  extra-data="{{ {jsUrl:codeUrl} }}" class="check_btn">开始校验</navigator >
+      </view>
+    </zan-popup> -->
+
+    <!-- 弹出层 附近餐厅-->
+    <zan-popup show="{{ dzdpAroundModel }}">
+       <view class="model_shop_warn"  wx:if="{{ userLocationAccredit }}">
+            <view class="model_shop1">警告</view>
+            <view class="model_shop2">您点击了拒绝授权，将无法获取附近餐厅数据，请点击重新授权</view>
+            <button class="check_btn" open-type="openSetting" bindopensetting='handler'>重新授权</button>
+            <button class="check_shopbtn" bindtap='dzdpAroundModelFalse'>取消</button>
+       </view>
+
+      <view class="model_shop_v" wx:if="{{ !userLocationAccredit }}">
+        <view class="shop_title">附近餐厅</view>
+        <view class="scroll-view_H">
+          <scroll-view  scroll-y style="height:640rpx;" >
+            <view class="shop_item" wx:for="{{ dzdpAroundList }}" data-index="{{ index }}" bindtap='chioceShop'>
+              <view class="shop_name" data-index="{{ index }}">{{ item.shopName }}</view>
+              <view class="shop_addr" data-index="{{ index }}">地址:{{ item.address }}</view>
+            </view>
+          </scroll-view>
+        </view>
+        <image src='/static/images/close.png' class='closeImg' bindtap='closeReader'></image>   
+      </view>    
+    </zan-popup>
+
+</view>

@@ -1,0 +1,27 @@
+<view class='container'>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+         <view class="title_text">恭喜您已成功绑定<text class="title_name">{{ supplier_name }}</text></view>
+         <navigator class="title_bottom" url='/pages/customer/newOrder/newOrder'>{{supplier_coupon}}</navigator>
+      </view>
+
+    </view>
+
+    <!-- 按钮 -->
+    <view class="bottom_menu">
+      <!-- 新建订单 -->
+      <navigator class="menu_nav" url='/pages/customer/newOrder/newOrder'>
+          <image class="nav_img" src="/static/images/new.png"></image>
+          <text>新建订单</text>
+      </navigator>
+      <!-- 全部订单 -->
+      <navigator  class="menu_nav" url='/pages/customer/allOrder/allOrder'>
+          <image  class="nav_img" src="/static/images/all.png"></image>
+          <text>全部订单</text>
+      </navigator>
+    </view>
+
+</view>

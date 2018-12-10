@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "餐厅订单",
+  "enablePullDownRefresh": true,
+   "backgroundColor": "#f1e9e2",
+  "usingComponents": {
+    "zan-tab": "/component/zanui/dist/tab/index",
+    "bottomMsg": "/component/bottomMsg/bottomMsg"
+  }
+}

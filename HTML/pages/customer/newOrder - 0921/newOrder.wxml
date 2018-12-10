@@ -1,0 +1,257 @@
+<view class='container'>
+    <!-- 头部背景 -->
+    <view class="title_bg">
+      <image src='/static/images/logo.png' class="title_bgPic"></image>
+      <view class="title_bgName">{{ superInfo.name }}</view>
+    </view>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+          <view class="title_addphone">
+              <view class="info_font">供应商：{{ superInfo.name }}</view>
+              <view class="info_font" style="margin: 0 10px 0 0;">电话：{{ superInfo.mobile }}</view>
+          </view>
+          <!-- <view class="info_font">订单号：{{ orderDetail.userAddr }}</view> -->
+      </view>
+
+       <!-- 主体 -->
+      <view class="scroll-v" >
+        <!-- 订单 -->
+        <view class="order_v" >
+            <!-- 菜单 -->
+            <view class="menu_v">
+              <!-- <view class="menu_item {{ menuIndex==0?'menu_s':'' }}" data-index="0" bindtap='changeMenu'>选择和填写产品</view>
+              <view class="menu_item {{ menuIndex==1?'menu_s':'' }}" data-index="1" bindtap='changeMenu'>上传图片</view> -->
+              <view class="menu_itemAll {{ menuIndex==0?'menu_s':'' }}" data-index="0" bindtap='changeMenu'>选择和填写产品</view>
+            </view>
+
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view >
+    <image  class="flex-item" src="avatar.png"></image>
+    </view>
+    <view >
+    <image  class="flex-item" src="avatar.png"></image>
+    </view>
+    <view >
+    <image  class="flex-item" src="avatar.png"></image>
+    </view>
+    <view >
+    <image  class="flex-item" src="avatar.png"></image>
+    </view>
+    <view >
+    <image  class="flex-item" src="avatar.png"></image>
+    </view>
+    <view >
+    <text class="flex-item ellipsis">...</text>
+    </view>
+  </view>
+</view>
+
+            <!-- 选填菜单 -->
+            <block wx:if="{{ menuIndex==0 }}">
+              <!-- 选择 -->
+              <view class="order_add">
+                  <!-- 下拉选择 -->
+                  <view class="order_select">
+                      <!-- 选择头 -->
+                      <view class="select_title" catchtap='changeDownUp'>
+                          <text class="select_name">下拉选择家乐产品</text>
+                          <image class="select_img" catchtap='changeDownUp' src="/static/images/{{ selectIndex==true?'up':'down'  }}.png"></image>
+                      </view>
+                      <!-- 选择项 -->
+                      <block wx:if="{{ selectIndex==true }}">
+                          <!-- item -->
+                          <view class="select_item" wx:for="{{ goodsList }}">
+                                <!-- 图片和名称 -->
+                                <view class="select_item_first">
+                                      <!-- 商品图标 -->
+                                      <image class="select_item_img" src="{{ item.product_pic }}"  data-index="{{ index }}" binderror="iconError" mode="aspectFill"></image>
+                                      <!-- 名/参数 -->
+                                      <view class="select_item_nameParam">
+                                          <text class="select_goodName">{{ item.product_name+'('+item.sku_unit+')' }}</text>
+                                          <!-- <text class="select_goodParam">规格：{{ item.sku_unit }}</text> -->
+                                      </view>
+                                </view>
+                                <!-- 选择器 -->
+                                <view class="select_item_last">
+                                    <view class="item_last_i" data-index="{{ index }}" data-step="-1" bindtap='countNumFun'>
+                                      <image class=" i_img" src="/static/images/sub.png" data-index="{{ index }}" data-step="-1"></image>
+                                    </view>
+                                    <view class="item_last_i i_input_v">
+                                      <input class="i_input" value="{{ !item.product_count?0:item.product_count }}" data-index="{{ index }}" type='number' bindinput='inputNumFun'></input>
+                                    </view>
+                                    <view class="item_last_i"  data-index="{{ index }}" data-step="1" bindtap='countNumFun'>
+                                      <image class="i_img" src="/static/images/add.png" data-index="{{ index }}" data-step="1"></image>
+                                    </view>
+                                </view>
+                          </view>
+                      </block>
+
+                  </view>
+
+                  <!-- 填选项 -->
+                  <view class="inp_sel_v" wx:for="{{ inputSelectList }}">
+                      <!-- 输入框 -->
+                      
+                      <input placeholder='请输入其他产品名称' disabled="{{ item.type==1 }}" data-index="{{ index }}" bindinput='inpSelectFun' class="{{ item.type==0?'inp_sel_input':'inp_sel_input1'}}" placeholder-class='inp_sel_placeholder' value="{{ item.product_name }}" maxlength="20"></input>
+                      
+                      <!-- 选择器 -->
+                      <view   class="inp_sel_s">
+                      <view class="select_item_last">
+                          <view class="item_last_i" data-index="{{ index }}" data-step="-1" bindtap='inputCountNumFun'>
+                            <image class=" i_img" src="/static/images/sub.png" data-index="{{ index }}" data-step="-1"></image>
+                          </view>
+                          <view class="item_last_i i_input_v">
+                            <input class="i_input" value="{{ !item.product_count?0:item.product_count }}" data-index="{{ index }}" type='number' bindinput='inputInputNumFun'></input>
+                          </view>
+                          <view class="item_last_i" data-index="{{ index }}" data-step="1" bindtap='inputCountNumFun'>
+                            <image class="i_img" src="/static/images/add.png" data-index="{{ index }}" data-step="1" ></image>
+                          </view>
+                      </view>
+                      <!-- 下拉选择 -->
+                      <picker bindchange="bindPickerChange" disabled="{{ item.type==1 }}" data-index="{{ index }}" value="{{ item.skuIndex }}" range="{{skuList}}" range-key='sku_unit'>
+                        <view class="picker" class="{{ item.type==1?' picker pickerHis':'picker'}}" >
+                          <text>{{skuList[item.skuIndex].sku_unit}}</text>
+                          <image class="picker_img" src="/static/images/down2.png"></image>
+                        </view>
+                      </picker>
+                  </view>
+</view>
+                  <!-- 添加历史/新增其他 -->
+                  <view class="hisAndOther">
+                    <view class="hisAndOther_btn" bindtap='openHistory'>添加历史产品</view>
+                    <view class="hisAndOther_btn" bindtap='addChoiceInputv'>新增其他产品</view>
+                  </view>
+
+              </view>
+              <!-- 备注 -->
+              <view class="order_remark">
+                  <text class="remark_name">备注</text>
+                  <textarea class="remark_textarea"  wx:if="{{ hisModelShow==false&&submitModelShow==false }}" bindinput='remarkInputFun' disabled="{{ hisModelShow }}" value='{{remark}}'></textarea>
+              </view>
+            </block>
+            <!-- 选填菜单结束 -->
+
+            <!-- 图片菜单开始 -->
+            <block wx:else>
+              <view class="imgOrder_list">
+                <!-- 图片列表 -->
+                <view class="imgOrder_pic_v" wx:for="{{ imgOrderList }}">
+                  <image class="imgOrder_pic_p" src="{{item.url}}" data-index="{{ index }}" bindlongpress="deleteImage"></image>
+                  <!-- 删除按钮 -->
+                  <view class="imgOrder_pic_model" wx:if="{{ item.delete }}"  data-index="{{ index }}" bindtap='removePicOrder'>
+                    <image class="imgOrder_pic_delete" src="/static/images/delete.png" data-index="{{ index }}"></image>
+                  </view>
+                </view>
+                <!-- 按钮 -->
+                <view class="imgOrder_pic_v" bindtap='choicePic' wx:if="{{ imgOrderList.length<4 }}">
+                  <image class="imgOrder_pic" src="/static/images/addpic.png"></image>
+                </view>
+              </view>
+              <!-- <view class="imgOrder_btn" bindtap='submitPic'>上传图片</view> -->
+            </block>
+            <!-- 图片菜单结束 -->
+            
+        </view>
+        <!-- 底部消息 -->
+        <bottomMsg my-class="bottomMsgClass"></bottomMsg>
+          
+      </view>
+    
+
+
+    </view>
+    <!-- 底部按钮 -->
+    <!-- <view class="bottom_btn">
+      <image class="btn_back" src="/static/images/back.png" bindtap='comback'></image>
+      <view class="yn_row">
+        <view class="yn_v" data-index="1" bindtap='toSubmit'>
+            <image class="btn_yn" src="/static/images/submit.png" data-index="1"></image>
+            <text class="remark_text" data-index="1">提交</text>
+        </view>
+      </view>
+    </view> -->
+    <cover-view class="bottom_btn">
+      <cover-image class="btn_back" src="/static/images/back.png" bindtap='comback'></cover-image>
+      <cover-image class="btn_yn" src="/static/images/zd_submit2.png" bindtap='toSubmit' data-index="1"></cover-image>
+    </cover-view>
+
+
+    <!-- 历史弹出层 -->
+    <zan-popup show="{{ hisModelShow }}">
+      <view class="model_v">
+        <!-- 滚动条 -->
+        <scroll-view scroll-y style="height: 100%;" class="his_scroll">
+          <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{historyList}}">
+              <checkbox value="{{index}}"  class="chexked" color="#ff6a00"/>
+              <view class="his_namedig">
+                  <view class="his_name">{{item.product_name+'('+item.sku_unit+')'}}</view>
+                  <!-- <view class="his_dig">{{ item.sku_unit }}</view> -->
+              </view>
+            </label>
+          </checkbox-group>     
+          <!-- 默认图片 -->
+          <image class="noDataImg" wx:if="{{ historyList.length<=0 }}" src="/static/images/noData.png"></image>
+        </scroll-view>
+        <!-- 按钮 -->
+        <view class="his_bottom_btn">
+          <view class="his_bottom_btn_i his_bottom_btn_i1" bindtap='yesHistory'>确认</view>
+          <view class="his_bottom_btn_i his_bottom_btn_i2" bindtap='noHistory'>取消</view>
+        </view>
+      </view>
+    </zan-popup>
+
+    <!-- 成功弹出层 -->
+    <zan-popup show="{{ successModelShow }}">
+      <view class="model_success_v">
+          <view class="success_text">订单提交成功,待供应商确认。</view>
+          <view class="success_timer">{{ successTimer }}s后自动返回订单页面</view>
+      </view>
+    </zan-popup>
+
+    <!-- 弹出层 -->
+    <zan-popup show="{{ submitModelShow }}">
+      <view class="model_v2">
+          <view class="model_y_text">是否确认提交此订单？</view>
+          <view class="model_btn">
+            <form bindsubmit="submitInfo" report-submit='true'  data-yesno="1">
+              <button form-type="submit" size="mini" class="btn btn_yes" data-yesno="1" >是</button>
+            </form>
+            <view class="btn btn_no"  data-yesno="0" bindtap='cloceModel'>否</view>
+          </view>
+      </view>
+    </zan-popup>
+
+
+</view>
+
+
+<!-- 弹出层 引导层-->
+<zan-popup show="{{ ShareShow }}" bindclose="togglePopup">
+    <image src="/static/guide/zd_s_product3.png" class="sharePic"></image>
+</zan-popup>
+
+<zan-popup show="{{ ShareShow2 }}" bindclose="togglePopup2">
+    <image src="/static/guide/zd_s_other.png" class="sharePic2"></image>
+</zan-popup>
+
+<zan-popup show="{{ ShareShow3 }}" bindclose="togglePopup3">
+    <image src="/static/guide/zd_s_gg3.png" class="sharePic3"></image>
+</zan-popup>
+
+<zan-popup show="{{ ShareShow4 }}" bindclose="togglePopup4">
+    <image src="/static/guide/zd_s_history21.png" class="sharePic4"></image>
+</zan-popup>
+
+<zan-popup show="{{ ShareShow5 }}" bindclose="togglePopup5">
+    <image src="/static/guide/zd_create21.png" class="sharePic5"></image>
+</zan-popup>
+
+<zan-popup show="{{ ShareShow6 }}" bindclose="togglePopup6">
+    <image src="/static/guide/zd_submit.png" class="sharePic6"></image>
+</zan-popup>
+

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单填写",
+  "usingComponents": {
+    "zan-popup": "/component/zanui/dist/popup/index",
+    "zan-stepper": "/component/zanui/dist/stepper/index",
+    "bottomMsg": "/component/bottomMsg/bottomMsg"
+  }
+}

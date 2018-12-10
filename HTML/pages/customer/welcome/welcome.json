@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "受邀信息",
+  "usingComponents": {
+    "zan-popup": "/component/zanui/dist/popup/index",
+    "bottomMsg": "/component/bottomMsg2/bottomMsg2"
+  }
+}

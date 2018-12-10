@@ -1,0 +1,584 @@
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.table{
+  height: 780px;
+  padding: 14rpx;
+  position: relative;
+  top: 24rpx;
+  z-index: 9;
+}
+
+/* 头部导航 */
+.title{
+  min-height: 678rpx;
+  height:auto;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 2px 10px #dcdbdb; 
+  padding: 20rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+ 
+.btn{
+  width: 100%;
+  height: 70rpx;
+  text-align: center;
+  border-radius: 15rpx;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  box-shadow: 0 2px 10px #dcdbdb; 
+}
+
+.btn_2{
+  background-color: #ff9700;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+/*  */
+.placeholder-input{
+  text-align: right;
+  font-size: 28rpx;
+  color: #cacaca;
+  letter-spacing: 1px;
+}
+
+.input_class{
+  font-size: 26rpx;
+  height: 80rpx;
+  text-align: left;
+  padding-left: 20rpx;
+  width: 100%;
+}
+
+/* 职业选择 */
+.picker{
+  height: 80rpx;
+  line-height: 80rpx;
+  justify-content:flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+/* 餐厅标题 */
+.shopTitle{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+/* 餐厅切换 */
+.shopswitch{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 切换item */
+.title_t{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 导航 */
+.t_tab{
+  width: 114rpx;
+  height: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999999;
+  line-height: 100rpx;
+}
+
+/* 导航选中 */
+.item_select{
+  border-bottom:2px solid #ff6a00; 
+}
+
+/* 文字选中 */
+.t_select{
+  color: #ff6a00;
+}
+
+/* 电话输入行 */
+.input_phone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 电话输入 */
+.phone_in{
+  width: 300rpx;
+}
+
+/* 获取验证码 */
+.phone_btn{
+  width: 154rpx;
+  height: 50rpx;
+  background-color: #ff9000;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
+
+
+.picker_v{
+  border: none;
+}
+
+.picker_in{
+  width: 100rpx;
+}
+
+/* 人均消费行 */
+.avg_cons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  color: #999999;
+  /* padding-left: 15rpx; */
+}
+
+.cons_text{
+  letter-spacing: 1px;
+}
+
+/* 人均消费输入 */
+.cons_input{
+  text-align: center;
+  width: 275rpx;
+}
+
+
+/* *********************** */
+.region-select{
+  width: 100%;
+  height: 600rpx;
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  left:0;
+  bottom: 0;
+}
+
+.region-select .hd{
+  height: 108rpx;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 46rpx 30rpx 0 30rpx;
+}
+
+.region-select .region-selected{
+  float: left;
+  height: 60rpx;
+  display: flex;
+}
+
+.region-select .region-selected .item{
+  max-width: 140rpx;
+  margin-right: 30rpx;
+  text-align: left;
+  line-height: 60rpx;
+  height: 100%;
+  color: #333;
+  font-size: 28rpx;
+  overflow: hidden;
+      text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.region-select .region-selected .item.disabled{
+  color: #999;
+}
+
+.region-select .region-selected .item.selected{
+  color: #ff6a00;
+}
+
+.region-select .done{
+  float: right;
+  height: 60rpx;
+  width: 60rpx;
+  border: none;
+  background: #fff;
+  line-height: 60rpx;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.region-select .done.disabled{
+  color: #999;
+}
+
+
+
+.region-select .bd{
+  height: 492rpx;
+  padding: 0 30rpx;
+}
+
+.region-list{
+  width: 100%;
+  height: 100%;
+  line-height: 104rpx;
+  text-align: left;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.region-select .item{
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: left;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.region-select .region-list .item.selected{
+  color: #ff6a00;
+}
+
+
+.bg-mask{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 8;
+}
+/* ******************************* */
+
+/* 弹出层 */
+.model_v{
+  width: 586rpx;
+  height: 525rpx;
+  margin: 300rpx auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 警告弹出层 */
+.model_shop_warn{
+  width: 586rpx;
+  height: 720rpx;
+  margin: 300rpx auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 附近餐厅弹出层 */
+.model_shop_v{
+  width: 586rpx;
+  height: 720rpx;
+  margin: 300rpx auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.model_1{
+  font-size: 30rpx;
+  margin-top: 100rpx;
+  color: #ff6a00;
+}
+
+.model_shop1{
+  font-size: 30rpx;
+  margin-top: 100rpx;
+  color: #ff6a00;
+}
+
+.model_2{
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.model_shop2{
+ font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+
+/* 校验按钮 */
+.check_btn{
+  width: 100%;
+  height: 60rpx;
+  background-color: #ff6a00;
+  margin-top: 200rpx;
+  text-align: center;font-size: 26rpx;
+  color: #fff;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+
+/* 校验按钮 */
+.check_shopbtn{
+  width: 100%;
+  height: 60rpx;
+  background-color: #8a8a8a;
+  margin-top: 10rpx;
+  text-align: center;font-size: 26rpx;
+  color: #fff;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+
+/* 商店item */
+.shop_item{
+  height: 110rpx;
+  padding: 10rpx;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #999999;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.shop_name{
+  font-size: 28rpx;
+  color: #000;
+}
+.shop_addr{
+  font-size: 26rpx;
+  color: #999999;
+}
+
+/* 附近商家弹窗title */
+.shop_title{
+  width: 100%;
+  height: 80rpx;
+  box-shadow: 0 2px 10px #dcdbdb; 
+  color: #ff6a00;
+  font-size: 26rpx;
+  line-height: 80rpx;
+  letter-spacing: 2px;
+}
+
+.scroll-view_H{
+  padding: 10rpx 40rpx;
+  height:640rpx;
+}
+
+/* 关闭附近餐厅 */
+.closeImg{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 190rpx;
+  margin-left: -40rpx;
+}
+
+.phone_btn_dis{
+  background-color: #999999;
+  font-size: 24rpx;
+}
+
+/* 自定义选择区域 */
+.model_region{
+  width: 752rpx;
+  height: 480rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.regionPickerV{
+  width: 33.3333333%;
+  height: 100%;
+  text-align: center;
+}
+
+.regionTop{
+  width: 100%;
+  height: 70rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #c2c2c26e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.regionTop_b{
+  font-size: 26rpx;
+  width: 150rpx;
+  text-align: center;
+}
+
+.regionBom{
+    width: 100%;
+    height: 410rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.regionTop_b_y{
+  color: #ff6a00;
+}
+
+.bottomMsgClass{
+  margin-top: 20rpx;
+}
+
+/* 输入外框 */
+.lableInput{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #d8d8d8;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.lable{
+  width: 180rpx;
+  height: 80rpx;
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  text-align: left;
+  letter-spacing: 1rpx;
+}
+
+/* 验证码输入行 */
+.input_code{
+  width: 76%;
+}
+
+.codeAllLine{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input_code_class{
+  padding-right: 20rpx;
+}
+
+.job_input_class{
+  padding-left: 0rpx;
+  margin-top: 22rpx;
+}
+
+.picker_item{
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1rpx solid #d8d8d8;
+  text-align: center;
+}
+
+.lable_job{
+  width: 152rpx;
+}
+
+.lableInput2{
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+
+}
+.lableInput3{
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_class2{
+  font-size: 26rpx;
+  height: 80rpx;
+  text-align: left;
+  width: 100%; 
+  border-bottom: 1rpx solid #d8d8d8;
+  
+}
+
+.input_class5{
+   font-size: 26rpx;
+  height: 80rpx;
+  text-align: left;
+  width: 100%; 
+  border-bottom: 1rpx solid #d8d8d8;
+  margin-bottom: 50rpx;
+}
+
+.placeholder-input2{
+  text-align: left;
+  font-size: 28rpx;
+  color: #cacaca;
+  letter-spacing: 1px;
+}
+
+.lable2{
+  height: 60rpx;
+}
+
+.lable_type{
+  width: 300px;
+}
+
+.lableInput3{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.input_class3{
+  font-size: 26rpx;
+  height: 80rpx;
+  text-align: center;
+  padding-left: 20rpx;
+  width: 310rpx;
+  border-bottom: 1rpx solid #d8d8d8;
+}
+
+.lable_type2{
+  width: 406rpx;
+}
+
+.placeholder-region{
+  text-align: left;
+}

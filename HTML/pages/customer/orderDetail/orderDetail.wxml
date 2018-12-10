@@ -1,0 +1,96 @@
+<view class='container'>
+    <!-- 头部背景 -->
+    <view class="title_bg">
+      <image src='/static/images/logo.png' class="title_bgPic"></image>
+      <view class="title_bgName">{{ superInfo.name }}</view>
+    </view>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+          <view class="title_date">{{ orderDetail.created_at }}</view>
+          <view class="info_font">{{ orderDetail.restaurant_name }}</view>
+          <view class="title_addphone">
+              <view class="info_font">收货人：{{ orderDetail.nickname }}</view>
+              <view class="info_font">{{ orderDetail.mobile }}</view>
+          </view>
+          <view class="info_font">收货地址：{{ orderDetail.address }}</view>
+
+      </view>
+
+       <!-- 主体 -->
+      <view class="scroll-v" >
+        <!-- 订单 -->
+        <view class="order_v" >
+            <!-- 普通订单 -->
+            <block wx:if="{{ orderDetail.order_type==0 }}">
+              <!-- 订单详情 -->
+              <view class="order_info" wx:for="{{ orderDetail.product_list }}" wx:for-item="item" wx:for-index="index">
+                  <!-- 图片商品名 -->
+                  <view class="info_imgname">
+                      <image class="info_img" src="{{ item.uploaded_img||'/static/images/defaule.png' }}" data-index="{{ index }}" binderror="iconError" mode="aspectFill"></image>
+                      <view class="info_name">{{ item.product_name +'(' + item.sku_unit + ')'}}</view>
+                  </view>
+
+                    <!-- 参数 -->
+                    <view class="info_param">
+                      <view class="param_item">
+                        <text>价格：{{ item.product_price }}元/{{ item.sku_unit }}</text>
+                      </view>
+                      <view class="param_item param_count">数量：{{ item.product_count }}{{ item.sku_unit }}</view>
+                    </view>
+              </view>
+            </block>
+             <!-- 图片订单 -->
+            <block wx:else>
+                <swiper class="swiper_img" indicator-dots="true">
+                  <block wx:for="{{orderDetail.product_list}}">
+                    <swiper-item>
+                      <image src="{{item}}" class="slide-image swiper_img" data-url="{{ item }}" bindtap='imgDetail'/>
+                    </swiper-item>
+                  </block>
+              </swiper>
+            </block>
+            <!-- 图片订单结束 -->
+        </view>
+      </view>
+
+      <!-- 订单备注 -->
+      <view class="order_remark">
+          <view class="order_remark_1 ">
+            <text class="remark_name">订单备注</text>
+            <text class="remark_text">{{ orderDetail.comments||"" }}</text>
+          </view>
+           <view class="order_remark_1 order_remark_2" wx:if="{{ orderDetail.order_status==3  }}">
+            <text class="remark_name">拒绝理由</text>
+            <text class="remark_text">{{ orderDetail.remark||"" }}</text>
+          </view>
+      </view>
+      <!-- 订单编号 -->
+      <view class="order_no">
+          <text class="remark_text">订单编号</text>
+          <text class="remark_text">{{ orderDetail.order_number||"" }}</text>
+      </view>
+       <!-- 底部消息 -->
+      <bottomMsg my-class="bottomMsgClass"></bottomMsg>
+    </view>
+    <!-- 底部按钮 -->
+    <view class="bottom_btn">
+          <view class="bottom_btn_left" wx:if="{{ orderDetail.order_status==2 }}">订单总金额：<text style="color:#ff0000">￥{{ orderDetail.order_amount }}</text></view>
+          <view class="bottom_btn_left" wx:else> </view>
+          <view class="bottom_btn_right">{{ nameArr[orderDetail.order_status] }}</view>
+    </view>
+
+    <!-- 弹出层 -->
+    <zan-popup show="{{ modelShow }}">
+      <view class="model_v">
+          <view class="model_y_text">是否{{ orderBackStatus==1?'确认':'拒绝' }}此订单？</view>
+          <textarea class="model_y_textarea" wx:if="{{ orderBackStatus==0 }}" placeholder='请说明原因' placeholder-class='placeClass' bindinput='reasonInput'></textarea>
+          <view class="model_btn">
+            <view class="btn btn_yes" data-yesno="1" bindtap='toYes'>是</view>
+            <view class="btn btn_no"  data-yesno="0" bindtap='toYes'>否</view>
+          </view>
+      </view>
+    </zan-popup>
+</view>

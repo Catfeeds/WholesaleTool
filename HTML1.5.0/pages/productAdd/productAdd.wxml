@@ -1,0 +1,76 @@
+<!--pages/productAdd/productAdd.wxml-->
+<!-- 微信导航栏 -->
+<view class='wx-nav' bindtap='backPage'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'>新建产品</text>
+</view>
+
+<view class='container'>
+  <!-- 头部背景 -->
+  <view class="title_bg">
+    <image src='/static/images/logo.png' class="title_bgPic"></image>
+    <view class="title_bgName">{{ baseInfo.name }}</view>
+  </view>
+  <image class="image" src='/static/images/juxing.png' />
+  
+  <view class='product-add'>
+      <scroll-view class='product-add-scroll' scroll-y>
+         <view class='add-list' wx:for="{{addListArray}}"  wx:for-index="addListArrayindex" data-arrindex='{{addListArrayindex}}'>
+            <view class='input-wrap'>
+               <input type="text" placeholder="请输入产品名称，例：xx酱油500g" placeholder-style="color: #ccc" maxlength='20' data-key='{{addListArrayindex}}' bindblur="bindblur" bindinput='bindInput' value='{{item.productName}}' />
+                <view class='close-icon' data-key='{{addListArrayindex}}' bindtap='emptyData'>
+                  <image src='../../static/images/xj-close.png'></image>
+                </view> 
+            </view>
+            <text class='pro-util'>请设置单位:</text>
+            <view class='checkbox-label'>
+               <label class="checkbox"  bindtap='checkboxStatus' wx:for="{{item.checkboxItems}}" wx:for-item="cell" wx:for-index="cellindex" data-cellindex='{{cellindex}}' data-key='{{addListArrayindex}}'>
+                  <image src='../../static/images/xj-check-tab.png' wx:if="{{cell.checked}}" ></image>
+                  <image src='../../static/images/xj-check.png' wx:else ></image>
+                  <text>{{cell.name}}</text> 
+               </label>
+            </view>
+         </view>
+         <view class='add-more' bindtap='bingNewPro' >提交并新建下一个产品</view>
+      </scroll-view>
+  </view>
+
+   <view class='submit'>
+      <view class='go-back' bindtap='goBack' ><image src='../../static/images/balance-to-l.png' ></image></view>
+      <button form-type='submit' bindtap='bindSubmit' >提交</button>
+   </view>
+
+   <!-- 确认返回弹窗 -->
+   <view class='pop-wrap' wx:if="{{popShowBack}}">
+      <view class='pop-product pop-delete'>
+         <text class='question'>请先点击提交哦,是否离开?</text>
+         <view class='button clearfix'>
+            <text bindtap='back_cancel'>否</text><text bindtap='back_affirm'>是</text>
+         </view>
+      </view>
+   </view>
+
+    <!-- 提交弹窗 -->
+   <view class='pop-wrap' wx:if="{{popWrap}}">
+      <view class='pop-product'>
+         <text class='question'>是否确认新建此产品？</text>
+         <view class='button clearfix'>
+            <text bindtap='pop_cancel'>取消</text><text bindtap='pop_affirm'>确认</text>
+         </view>
+      </view>
+   </view>
+
+   <!-- 提交和新建弹窗 -->
+   <view class='pop-wrap' wx:if="{{popWrapXj}}">
+      <view class='pop-product'>
+         <text class='question'>是否确认新建此产品？</text>
+         <view class='button clearfix'>
+            <text bindtap='pop_cancelXj'>取消</text><text bindtap='pop_affirmXj'>确认</text>
+         </view>
+      </view>
+   </view>
+
+ </view>

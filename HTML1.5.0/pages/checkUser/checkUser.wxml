@@ -1,0 +1,32 @@
+<!--pages/checkUser/checkUser.wxml-->
+<!--pages/productAdd/productAdd.wxml-->
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'>查看用户</text>
+</view>
+
+<view class='container'>
+  <!-- 头部背景 -->
+  <view class="title_bg">
+    <image src='/static/images/logo.png' class="title_bgPic"></image>
+    <view class="title_bgName">{{ baseInfo.name }}</view>
+  </view>
+  <image class="image" class='checkUser-image' src='/static/images/juxing.png' />
+  
+  <view class='product-add'>
+      <view class='checkUser-title'><text>门店名称</text><text>是否支持下单</text></view>
+      <scroll-view class='product-add-scroll' scroll-y>
+         <view class='checkUser-name' wx:for="{{checkUserList}}">
+            <text>{{item.restaurant_name}}</text>
+            <icon type="success" size="22" color='#ff9700' wx:if="{{item.seleted}}" bindtap='checkIcon' data-index='{{index}}' ></icon>
+            <icon type="circle" size="22" wx:else bindtap='checkIcon' data-index='{{index}}' ></icon>
+         </view>
+      </scroll-view>
+  </view>
+
+  
+ </view>

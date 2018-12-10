@@ -1,0 +1,123 @@
+/* ****************阅读准则************ */
+.reader_v{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.reader_first{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.readerYes{
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 10rpx;
+}
+
+.reader_1{
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.reader_2{
+  font-size: 24rpx;
+  color: #ff6600;
+}
+
+/* 弹出层 */
+.model_reader_v{
+  width: 586rpx;
+  height: 740rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reader_3{
+  font-size: 26rpx;
+  color: #ff6600;
+}
+
+.scroll_text{
+  font-size: 22rpx;
+  text-align: left;
+}
+
+.scroll_title{
+  font-size: 23rpx;
+  font-weight: bold;
+}
+
+.scroll_li{
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll_title2{
+  font-size: 26rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.li_num{
+  margin-right:10rpx;
+}
+
+.text_title{
+  font-size: 24rpx;
+  color: #333333;
+  font-weight: bold;
+  margin: 10rpx 0;
+}
+
+/* 关闭准则 */
+.closeImg{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -40rpx;
+}
+
+/* ****************阅读准则************ */
+
+.btn {
+  margin: 0 30px;
+  height: 40px;
+  line-height:40px;
+}
+/* .item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+     height: 130rpx;
+     width: 100%;
+} */
+.item{
+  display: block;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size:14px;
+  margin: 0 30px;
+  margin-top:10px;
+  background-color:#FFA850; 
+  border-radius: 5px;
+  border-bottom: 2px solid #68BAEA;
+}
+.block{
+    display: block;
+    color:#ffffff;
+    padding: 5px;
+}/* pages/bleConnect/bleConnect.wxss */

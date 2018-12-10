@@ -1,0 +1,62 @@
+<view class='container'>
+        <!-- 头部背景 -->
+    <view class="title_bg">
+      <image src='/static/images/logo.png' class="title_bgPic"></image>
+      <view class="title_bgName">{{ baseInfo.name }}</view>
+    </view>
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+       <view class="title_t" wx:for="{{titleLable}}" wx:for-item="titleItem" wx:for-index="titleIndex">
+          <view class="t_tab {{ status==titleItem.status?'t_select':'' }}" data-status="{{ titleItem.status }}" bindtap='changeStatus'>{{ titleItem.name }}</view>
+       </view>
+      </view>
+
+       <!-- 主体 -->
+      <scroll-view class="scroll-v" scroll-y style="height: {{ scrollHeight }}px;" >
+        <!-- 订单 -->
+        <view class="order_v" wx:for="{{ orderList }}" wx:for-item="item" wx:for-index="index">
+            <view class="order_date">{{ item.date }}</view>
+
+            <!-- 订单详情 -->
+            <navigator url="/pages/orderDetail/orderDetail?orderId={{ it.id }}" class="order_info" wx:for="{{ item.list }}" wx:for-item="it" wx:for-index="i">
+              <view class="info_time">
+                  <view class="info_font">{{ it.created_at }}</view>
+                  <view class="info_font">{{ nameArr[it.order_status] }}</view>
+              </view>
+              <view class="info_detail">
+                  <view class="order_2">
+                    <view class="info_font">{{ it.restaurant_name }}</view>
+                    <view class="info_font" wx:if="{{ it.order_status==2 }}">合计：<text style="color:#ff0000">￥{{ it.order_amount }}</text></view>
+                  </view>
+                  <!-- 普通订单 -->
+                  <view class="info_item" wx:if="{{ it.order_type==0 }}">
+                      <image class="item_img" wx:if="{{j<4}}" src="{{ pro.uploaded_img||'/static/images/defaule.png' }}" wx:for="{{ it.product_list }}" wx:for-item="pro" wx:for-index="j" mode="aspectFill"></image>
+                      <text class="info_font" wx:if="{{ it.product_list.length>4 }}">...</text>
+                      <text class="info_font item_text">共{{ it.product_list.length }}个商品</text>
+                  </view>
+                   <!-- 图片订单 -->
+                  <view class="info_item" wx:if="{{ it.order_type==1 }}">
+                      <image class="item_img" wx:if="{{j<4}}" src="{{ pro||'/static/images/defaule.png' }}" wx:for="{{ it.product_list }}" wx:for-item="pro" wx:for-index="j"></image>
+                      <text class="info_font" wx:if="{{ it.product_list.length>4 }}">...</text>
+                      <text class="info_font item_text">等{{ it.product_list.length }}张图片</text>
+                  </view>
+              </view>
+              <!-- 订单号 -->
+              <view class="info_bottom">
+                  <view class="bottom_no">订单编号:{{ it.order_number }}</view>
+                  <view class="bottom_no bottom_btn">查看详情</view>
+              </view>  
+            </navigator>
+        </view>
+      
+
+      <!-- 底部消息 -->
+      <bottomMsg my-class="bottomMsgclass"></bottomMsg>
+
+      </scroll-view>
+
+    </view>
+
+</view>

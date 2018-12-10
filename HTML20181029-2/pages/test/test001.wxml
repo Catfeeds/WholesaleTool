@@ -1,0 +1,17 @@
+<!--pages/test/test001.wxml-->
+<!-- <text>pages/test/test001.wxml</text> -->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+ 
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here" />
+  </view>
+ 
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <!-- <button formType="reset">Reset</button> -->
+  </view>
+</form>
+
+<!-- <button bindtap='close' data-page='5'>close</button>  -->

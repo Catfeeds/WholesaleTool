@@ -1,0 +1,26 @@
+<view class='container' wx:if="{{ pageShow }}">
+  <image class="image" src='/static/images/juxing.png' />
+  <view class="title_bgName" style="position:relative;top:30px">欢迎使用订单助手！</view>
+  <image class="clearStorage" bindtap="clearStorage" src='/static/images/clearStorage2.png' />
+  <view class="table">
+    <view class='form'>
+      <view class="table_inp">
+        <image class="icon" src='/static/images/account.png'></image>
+        <input class="input" placeholder-class="placeholder" placeholder='请输入用户名' bindinput='accountInput'></input>
+      </view>
+      <view class="table_inp">
+        <image class="icon" src='/static/images/password.png'></image>
+        <input class="input" placeholder-class="placeholder" placeholder='请输入密码' bindinput='pwdInput' password="true"></input>
+      </view>
+      <!-- 自定义组件 -->
+      <reader>
+        <!-- <navigator class="forgit_pas" url='/pages/forgetPsw/forgetPsw'>忘记密码？</navigator> -->
+        <!-- <view bindtap="bindGetUserInfo2" class="forgit_pas">忘记密码</view> -->
+        <button class="forgit_pas"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo2" >忘记密码</button>
+      </reader>
+        <bottomMsg ></bottomMsg>
+        <!-- <navigator class="forgit_pas"  style="text-align: right;" url='/pages/resetPsw/resetPsw'>重制密码？</navigator> -->
+      <button class="login" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "专属收单码",
+  "usingComponents": {
+    "zan-popup": "/component/zanui/dist/popup/index"
+  }
+}

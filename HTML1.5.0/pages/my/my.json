@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "我的账户",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "backgroundColor": "#f1e9e2",
+  "usingComponents": {
+    "zan-popup": "/component/zanui/dist/popup/index",
+    "zan-tab": "/component/zanui/dist/tab/index",
+    "bottomMsg": "/component/bottomMsg/bottomMsg"
+  }
+}

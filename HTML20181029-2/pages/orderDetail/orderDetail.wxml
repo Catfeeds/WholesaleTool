@@ -1,0 +1,274 @@
+<view class='container'>
+        <!-- 头部背景 -->
+    <view class="title_bg">
+      <image src='/static/images/logo.png' class="title_bgPic"></image>
+      <view class="title_bgName">{{ baseInfo.name }}</view>
+    </view>
+    <image class="image" src='/static/images/juxing.png'/>
+          <view class="title">
+          <view class="title_date">{{ orderDetail.created_at }}</view>
+          <view class="info_font">{{ orderDetail.restaurant_name }}</view>
+          <view class="title_addphone">
+              <view class="info_font">收货人：{{ orderDetail.nickname }}</view>
+              <view class="info_font">电话：{{ orderDetail.mobile }}</view>
+          </view>
+          <view class="info_font">收货地址：{{ orderDetail.address }}</view>
+
+      </view>
+    <scroll-view class="table" scroll-y style="height: {{ scrollHeight-110}}px;">
+      <!-- 头部导航 -->
+
+
+       <!-- 主体 -->
+      <view class="scroll-v" >
+        <!-- 订单 -->
+        <view class="order_v" >
+            <!-- 正常订单 -->
+            <block wx:if="{{ orderDetail.order_type==0 }}">    
+                <!-- 订单详情 -->
+                <view class="order_info" wx:for="{{ orderDetail.product_list }}" wx:for-item="item" wx:for-index="index">
+                    <!-- 图片商品名 -->
+                    <view class="info_imgname">
+                        <image class="info_img" src="{{ item.uploaded_img||'/static/images/defaule.png' }}"  mode="aspectFill"></image>
+                        <view class="info_name">{{ item.product_name + '(' + item.sku_unit + ')' }}</view>
+                    </view>
+
+                    <!-- 编辑状态 -->
+                    <block  wx:if="{{ item.isEdit }}">
+                      <!-- 参数 -->
+                      <view class="info_param">
+                        <!-- <view class="param_item">
+                          <view>规格：{{ item.sku_unit }}</view>
+                          <view style="margin-left:20rpx;">价格：</view>
+                            <input class="edit_input" value="{{ item.product_price }}" data-index="{{ index }}" type="digit" maxlength="8" bindinput="inputPriceFun" bindfocus='inputPriceFocus'/>
+                          <view> 元/{{ item.sku_unit }}</view>
+                        </view> -->
+                        <view class="param_item param_count">
+                          <view class="count_v1">
+                            <view class="edit_1" data-good-step="-1" data-good-index="{{ index }}" bindtap='countNumFun'>价格：</view>
+                            <input class="edit_input" value="{{ item.product_price }}" data-index="{{ index }}" type="digit" maxlength="8" bindinput="inputPriceFun" bindfocus='inputPriceFocus'></input>
+                            <view class="edit_2" data-good-step="1" data-good-index="{{ index }}" bindtap='countNumFun'>元/{{ item.sku_unit }}</view>
+                          </view>
+                        </view>
+
+                        <view class="param_item param_count">
+                          <text>数量：</text>
+                          <view class="count_v">
+                            <view class="edit_count_i" data-good-step="-1" data-good-index="{{ index }}" bindtap='countNumFun'>-</view>
+                            <input class="edit_count_num" data-good-id="{{ item.id }}" data-good-index="{{ index }}" bindinput='inputNumFun' value="{{ item.product_count }}"  type='number' maxlength='8'></input>
+                            <view class="edit_count_i" data-good-step="1" data-good-index="{{ index }}" bindtap='countNumFun'>+</view>
+                          </view>
+                          <text>{{ item.sku_unit }}</text>
+                        </view>
+                      </view>
+                      <!-- 按钮 -->
+                      <view class="info_btn">
+                          <view class="btn_v" data-good-id="{{ item.id }}" data-good-index="{{ index }}"  bindtap='saveGoods'>保存</view>
+                          <view class="btn_v" data-good-id="{{ item.id }}" data-good-index="{{ index }}" bindtap='cancelGoods' >取消</view>
+                      </view>
+                    </block>
+
+                    <!-- 原始状态 -->
+                    <block  wx:else>
+                      <!-- 参数 -->
+                      <view class="info_param">
+                        <!-- 非确认订单 -->
+               
+                        <view class="param_item">价格：{{ item.product_price }}元/{{ item.sku_unit }}</view>
+                        <view class="param_item param_count">数量：{{ item.product_count }}{{ item.sku_unit }}</view>
+                      </view>
+                      <!-- 按钮 -->
+                      <view class="info_btn" wx:if="{{ orderDetail.order_status==1 }}">
+                          <view class="btn_v" data-good-id="{{ item.id }}" data-good-index="{{ index }}"  bindtap='editGoods'>编辑</view>
+                          <view class="btn_v" data-id="{{ item.product_id }}" data-index="{{ index }}" bindtap='deleteGoods' >删除</view>
+                      </view>
+                    </block>
+
+                </view>
+            </block>
+            <!-- 图片订单 -->
+            <block wx:else>
+                <swiper class="swiper_img" indicator-dots="true">
+                  <block wx:for="{{orderDetail.product_list}}">
+                    <swiper-item>
+                      <image src="{{item||'/static/images/defaule.png'}}" class="slide-image swiper_img" data-url="{{ item }}" bindtap='imgDetail'/>
+                    </swiper-item>
+                  </block>
+              </swiper>
+            </block>
+            <!-- 图片订单结束 -->
+        </view>
+      </view>
+
+      <!-- 订单备注 -->
+      <view class="order_remark" wx:if="{{ orderDetail.order_type==0 }}">
+          <text class="remark_name">订单备注</text>
+          <text class="remark_text">{{ orderDetail.comments||'' }}</text>
+      </view>
+      <!-- 订单编号 -->
+      <view class="order_no">
+          <text class="remark_text">订单编号</text>
+          <text class="remark_text">{{ orderDetail.order_number }}</text>
+      </view>
+      <!-- 底部消息 -->
+      <bottomMsg my-class="bottomMsgClass"></bottomMsg>
+    </scroll-view>
+
+    
+    <!-- 底部按钮 -->
+    <view class="bottom_btn" wx:if="{{ printOrserShow==false }}">
+      <!-- 当未确认订单参有 确认/拒绝 按钮 -->
+      <block wx:if="{{ orderDetail.order_status==1 }}">
+        <image class="btn_back" src="/static/images/back.png" bindtap='comback'></image>
+        <view class="yn_row" >
+          <view class="yn_v" data-index="1" bindtap='orderYes'>
+              <image class="btn_yn" src="/static/images/yes.png" data-index="1"></image>
+              <text class="remark_text" data-index="1">确认</text>
+          </view>
+          <view  class="yn_v"  data-index="0" bindtap='orderYes'>
+              <image class="btn_yn" src="/static/images/no.png" data-index="0"></image>
+              <text class="remark_text" data-index="0">拒绝</text>
+          </view>
+        </view>
+      </block>
+      <!-- 已确认的普通订单才能打印 -->
+      <block wx:if="{{ orderDetail.order_status==2&&orderDetail.order_type==0 }}">
+        <view class="yesTotal">订单总金额：<text class="total_red">￥{{ orderDetail.order_amount }}</text></view>
+        <view class="yn_row" >
+        <!-- <view class="yn_row" wx:if="{{ true }}"> -->
+          <view class="yn_v" data-index="1"  bindtap='searchBlue'>
+              <image class="btn_yn" src="/static/images/print.png" data-index="1"></image>
+              <text class="remark_text" data-index="1" >打印</text>
+          </view>
+        </view>
+      </block>
+
+    </view>
+
+    <!-- 弹出层 -->
+    <zan-popup show="{{ modelShow==true }}">
+      <view class="model_v">
+          <view class="model_y_text">是否{{ orderBackStatus==1?'确认':'拒绝' }}此订单？</view>
+          <!-- <textarea class="model_y_textarea" wx:if="{{ orderBackStatus==0 }}" placeholder='请说明原因' placeholder-class='placeClass' bindinput='reasonInput' value='{{ reason }}'></textarea> -->
+          <input class="model_y_textarea" id="textareano" wx:if="{{ orderBackStatus==0 }}" placeholder='请说明原因' placeholder-class='placeClass' bindinput='reasonInput' value='{{ reason }}'/> 
+          <view class="model_btn">
+            <form bindsubmit="submitInfo" report-submit='true'  data-yesno="1">
+              <button form-type="submit" size="mini" class="btn btn_yes" data-yesno="1" >是</button>
+            </form>
+            <view class="btn btn_no"  data-yesno="0" bindtap='toNo'>否</view>
+          </view>
+      </view>
+    </zan-popup>
+    <!-- 弹出层 拒绝后展示-->
+    <zan-popup show="{{ NOShow }}">
+      <view class="model_v_n">
+          <view class="model_n_title">该订单已拒绝！</view>
+          <view class="model_n_text">请及时联系客户说明情况</view>
+          <view class="model_n_text">联系电话：{{orderDetail.mobile }}</view>
+          <view class="model_n_timer">{{ timer }}s后自动返回订单列表</view>
+      </view>
+    </zan-popup>
+    <!-- 弹出层 询问删除商品-->
+    <zan-popup show="{{ deleteGoodsId }}">
+       <view class="model_v">
+          <view class="model_y_text">是否确认删除此商品？</view>
+          <view class="model_btn">
+            <view class="btn btn_yes" data-yesno="1" bindtap='toDeleteGoods'>是</view>
+            <view class="btn btn_no"  data-yesno="0" bindtap='toDeleteGoods'>否</view>
+          </view>
+      </view>
+    </zan-popup>
+    <!-- 弹出层 打印订单-->
+   <zan-popup show="{{ printOrserShow }}">
+       <view class="model_print">
+         <scroll-view  scroll-y class="print_scroll">
+          <view class="print_v">
+            <!-- 基本信息 -->
+            <view class="print_base">
+                <view class="print_title">订单</view>
+                <view class="print_left">{{ orderDetail.restaurant_name }}</view>
+                <view class="print_between">
+                    <view>收货人：{{ orderDetail.nickname }}</view>
+                    <view>{{ orderDetail.mobile }}</view>
+                </view>
+                <view class="print_left">收货地址：{{ orderDetail.address }}</view>
+                <view class="print_left">下单时间：{{ orderDetail.created_at }}</view>
+                <view class="print_left">订单编号：{{ orderDetail.order_number }}</view>
+            </view>
+            <!-- 商品行 -->
+            <view class="print_list">
+                <view class="print_item" wx:for="{{ orderDetail.product_list }}">
+                    <view>{{ ((index+1)<9?'0'+(index+1):(index+1))+'.'+item.product_name }}</view>
+                    <view class="good_param">
+                      <view class="good_param_price">
+                      <view class="good_param_price_1">{{ item.product_price }}</view>元/{{ item.sku_unit }}</view>
+                      <view >{{ item.product_count + '  ' + item.sku_unit }}</view>
+                      <!-- <view>小计：￥{{ item.product_price * item.product_count }}</view> -->
+                    </view>
+                </view>
+            </view>
+            <!--其他信息 -->
+            <view class="print_other">
+               <view class="print_left print_total">总金额：{{ orderDetail.order_amount }}元</view>
+               <view class="print_left">备   注：{{ orderDetail.comments }}</view>
+               <view class="print_left print_o" style="margin-top:30rpx;">批发商：{{ userInfo.name }}</view>
+               <view class="print_left print_o">联系电话：{{ userInfo.mobile }}</view>
+               <view class="print_left print_o">地   址：{{ userInfo.address||"" }}</view>
+
+            </view>
+          </view>
+         </scroll-view>
+         <!-- 下部分 -->
+         <view class="print_bottom">
+              <!-- 计数器 -->
+              <view class="print_countv">
+                  <view>打印数量：</view>
+                  <view class="count_p_v">
+                      <view class="p_count_i" data-step="-1" bindtap='countPrintNum'>-</view>
+                      <view class="p_count_num">{{ printCount }}</view>
+                      <view class="p_count_i" data-step="1" bindtap='countPrintNum'>+</view>
+                  </view>
+                  <view>份</view>
+              </view>
+              <view class="print_btn">
+                <view class="print_reset" bindtap='printReset' wx:if="{{ deviceId }}">重新连接</view>
+                <view class="print_reset" wx:else></view>
+                <view class="print_2">
+                  <view class="print_no" bindtap='printCancel'>取消</view>
+                  <view class="print_yes" bindtap='printOrder'>打印</view>
+                </view>
+              </view>
+         </view>
+      </view>
+    </zan-popup>
+
+</view>
+
+<!-- <zan-popup show="{{ ShareShow }}" bindclose="togglePopup">
+      <image src="/static/guide/sh_index.gif" bindclose="togglePopup" style='opacity:0.5;width:750rpx;height:1200rpx;'></image>
+</zan-popup> -->
+
+<!-- 弹出层 引导层-->
+<view class='popup' wx:if="{{ ShareShow }}" bindtap="togglePopup">
+  <block wx:if="{{isIphoneX==true}}">
+      <image src="/static/guide1/sh_edit.png" class="{{ isIphoneX?'sharePic-iphoneX':'sharePic' }}"></image>
+  </block>
+  <block wx:elif="{{isIphoneX==false}}">
+      <image src="/static/guide1/sh_edit.png" class="{{ isIphoneX?'sharePic-iphoneX':'sharePic' }}"></image>
+  </block>
+  <block wx:else>
+ <image src="/static/guide1/sh_edit.png" class="sharePic-Nokia"></image>
+  </block>
+</view>
+
+<view class='popup' wx:if="{{ ShareShow2 }}" bindtap="togglePopup2">
+  <block wx:if="{{isIphoneX==true}}">
+      <image src="/static/guide1/sh_comfirm.png" class="{{ isIphoneX?'sharePic2-iphoneX':'sharePic2' }}"></image>
+  </block>
+  <block wx:elif="{{isIphoneX==false}}">
+      <image src="/static/guide1/sh_comfirm.png" class="{{ isIphoneX?'sharePic2-iphoneX':'sharePic2' }}"></image>
+  </block>
+  <block wx:else>
+    <image src="/static/guide1/sh_comfirm.png" class="sharePic2-Nokia"></image>
+  </block>
+</view>

@@ -1,0 +1,11 @@
+{
+   "navigationBarTitleText": "产品管理",
+   "enablePullDownRefresh": false,
+   "disableScroll": true,
+   "backgroundColor": "#f1e9e2",
+   "usingComponents": {
+      "zan-tab": "/component/zanui/dist/tab/index",
+      "bottomMsg": "/component/bottomMsg/bottomMsg",
+      "zan-popup": "/component/zanui/dist/popup/index"
+   }
+}

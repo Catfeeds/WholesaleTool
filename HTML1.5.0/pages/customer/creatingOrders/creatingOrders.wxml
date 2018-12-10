@@ -1,0 +1,132 @@
+<!--pages/customer/creatingOrders/creatingOrders.wxml-->
+
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back' bindtap='backPage'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'></text>
+</view>
+
+
+<view class='container'>
+  <!-- 头部背景 -->
+  <view class="title_bg">
+    <image src='/static/images/logo.png' class="title_bgPic"></image>
+    <view class="title_bgName">{{ shop_name }}</view>
+  </view>
+  <image class="image" class='create-image' src='/static/images/juxing.png' />
+  
+  <view class='create-content'>
+      <view class='cont-left'>
+         <text class="{{tab == 0 ? 'on' : ''}}" data-tab='0' bindtap='change'>家乐产品</text>
+         <text class="{{tab == 1 ? 'on' : ''}}" data-tab='1' bindtap='change'>其它品牌产品</text>
+         <text class="{{tab == 2 ? 'on' : ''}}" data-tab='2' bindtap='change'>新建产品</text>
+      </view>
+      <scroll-view class='cont-right' scroll-y >
+
+      <!-- 家乐产品 -->
+         <view class='cont-right-list clearfix' wx:for="{{createOrderList}}" wx:key="*this" data-index='{{index}}'  wx:if="{{tab == 0}}">
+            <image class='goods' src='{{item.product_pic}}' ></image>
+            <view class='pro-right'>
+               <text class='pro-name'>{{item.product_name}}</text>
+               <view class='select-type clearfix'>
+                  <picker value="{{index_J}}"  mode = "selector" range="{{item.sku_unit}}" range-key="spec_name" data-key='{{index}}' bindchange="bindChangeJl" >
+                     <view class='picker'><text>{{item.sku_unit[index_J[index].type]?item.sku_unit[index_J[index].type].spec_name:item.sku_unit[0].spec_name}}</text><image src='../../../static/images/slide-down.png'></image></view>
+                  </picker>
+                  <view class='calculate clearfix'>
+                     <image class='minus' src='../../../static/images/minus.png' data-key="{{index}}" bindtap='bindminus'  ></image>
+                     <input class='input' type="number" data-key="{{index}}" bindinput='inputJl' value='{{item.num}}' />
+                     <image class='add' src='../../../static/images/append.png' data-key="{{index}}" bindtap='bindadd'></image>
+                  </view>
+               </view>
+            </view>
+         </view>
+      <!-- 其它产品 -->
+         <view class='cont-right-list clearfix' wx:for="{{create_other}}" wx:key="*this" wx:if="{{tab == 1}}">
+            <text class='pro-name'>{{item.product_name}}</text>
+            <view class='select-type clearfix'>
+               <picker  value="{{index_q}}" mode = "selector" range-key='spec_name' range="{{item.sku_unit}}" bindchange="bindChangeQt" data-key='{{index}}'>
+                  <view class='picker'><text>{{item.sku_unit[index_q[index].type]?item.sku_unit[index_q[index].type].spec_name:item.sku_unit[0].spec_name}}</text><image src='../../../static/images/slide-down.png'></image></view>
+               </picker>
+               <view class='calculate'>
+                  <image class='minus' src='../../../static/images/minus.png' data-key="{{index}}" bindtap='bindminusQt' ></image>
+                  <input class='input' type="number"  data-key="{{index}}" bindinput='inputQt' value='{{item.num}}' />
+                  <image class='add' src='../../../static/images/append.png' data-key="{{index}}" bindtap='bindaddQt'></image>
+               </view>
+            </view>
+         </view>
+
+      <!-- 新建产品 -->
+         <view wx:if="{{tab == 2}}" >
+            <view class="new-right-list clearfix" data-index="{{index}}" wx:for="{{create_newpro}}" wx:key="item">
+               <view class='slide-content'>
+                  <input class='new-input' type='text' data-key='{{index}}' maxlength='20' value='{{item.product_name}}' bindblur="bindblur" bindinput='bindInput' placeholder='请输入产品名称，例：xx酱油500g' placeholder-style="color: #ccc"></input>
+                  <view class='new-bottom clearfix'>
+                  <!-- 下拉选择 -->
+                     <picker range="{{skuList}}" wx:key="item" mode = "selector" range-key='name'  bindchange="bindpickerChange" value="{{index_u}}" data-key='{{index}}' >
+                        <view class="picker" class='new-select'>
+                        <text>{{skuList[index_u[index].type]?skuList[index_u[index].type].name:skuList[0].name}}</text>
+                           <image src='../../../static/images/slide-down.png'></image>                  
+                        </view>
+                     </picker>      
+
+                     <view class='calculate createpro'>
+                        <image class='minus' src='../../../static/images/minus.png' data-key="{{index}}" bindtap='bindminusXj' ></image>
+                        <input class='input' type="number" data-key="{{index}}" bindblur="bindblurXj" bindinput='inputXj' value='{{item.num}}' />
+                        <image class='add' src='../../../static/images/append.png' data-key="{{index}}" bindtap='bindaddXj'></image>
+                     </view>
+                     <view class='slide-delete' catchtap="delete" data-key="{{index}}">删除</view>
+                  </view>
+               </view>
+            </view>
+            <text class='new-button' bindtap='newProduct'>新建更多产品</text>
+         </view>
+
+
+      </scroll-view>
+   </view>
+  
+    <!-- 确认返回弹窗 -->
+   <view class='pop-wrap' wx:if="{{popShowBack}}">
+      <view class='pop-product pop-delete'>
+         <text class='question'>请先点击下单哦,是否离开?</text>
+         <view class='button clearfix'>
+            <text bindtap='back_cancel'>否</text><text bindtap='back_affirm'>是</text>
+         </view>
+      </view>
+   </view>
+
+   <!-- 确认删除弹窗 -->
+   <view class='pop-wrap' wx:if="{{popShowDelete}}">
+      <view class='pop-product pop-delete'>
+         <text class='question'>确认删除？</text>
+         <view class='button clearfix'>
+            <text bindtap='delete_cancel'>取消</text><text bindtap='delete_affirm'>确认</text>
+         </view>
+      </view>
+   </view>
+
+
+   <!-- 提交弹窗 -->
+   <view class='pop-wrap' wx:if="{{popWrap}}">
+      <view class='pop-product'>
+         <text class='question'>是否确认提交该订单？</text>
+         <text class='remark'>备注：</text>
+         <textarea class='wirte' bindinput='textInput'></textarea>
+         <view class='button clearfix'>
+            <text bindtap='pop_cancel'>取消</text><text bindtap='pop_affirm'>确认</text>
+         </view>
+      </view>
+   </view>
+
+   <view class='submit'>
+      <view class='go-back' bindtap='goBack' ><image src='../../../static/images/balance-to-l.png' ></image></view>
+      <button form-type='submit' bindtap='submit_tab'>下单</button>
+   </view>
+
+ </view>
+
+
+

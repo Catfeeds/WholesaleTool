@@ -1,0 +1,106 @@
+<!--pages/productManage/productManage.wxml-->
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <!-- <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view> -->
+   <text class='showTitle'>产品管理</text>
+</view>
+
+<view class='container'>
+  <!-- 头部背景 -->
+  <view class="title_bg">
+    <image src='/static/images/logo.png' class="title_bgPic"></image>
+    <view class="title_bgName">{{ baseInfo.name }}</view>
+  </view>
+
+  <image class="image" src='/static/images/juxing.png' />
+  <view class="table">
+    <!-- 头部导航 -->
+    <view class="title">
+      <view class="title_t" wx:for="{{titleLable}}" wx:for-item="titleItem" wx:for-index="titleIndex">
+        <view class="t_tab {{ status==titleItem.status?'t_select':'' }}" data-status="{{ titleItem.status }}" bindtap='changeStatus'>{{ titleItem.name }}</view>
+      </view>
+    </view>
+
+    <!-- 主体 -->
+    
+         <view class='pro-jl-list' >
+            <!-- 家乐产品 -->
+            
+               <view style='height:100%'  wx:if="{{status == 1}}">
+                  <scroll-view class='scroll-h' scroll-y scroll-top="{{scrollTop}}" bindscroll="scroll">
+                     <view class='list clearfix' wx:for="{{JiaLeProduct}}" >
+                        <image src='{{item.product_pic}}'></image>
+                        <text class="pro-name {{item.isSecond ? 'second' : ''}}">{{item.product_name}}</text>
+                        <navigator url='../checkUser/checkUser?product_parent_id={{item.product_parent_id}}&type=1' class='download'>支持下单客户</navigator>
+                     </view>
+                     <!-- 返回顶部 -->
+                     <view class='back-top' hidden='{{flag}}' bindtap="goTop">
+                        <image src='../../static/images/back-top.png'></image>
+                     </view>
+                  </scroll-view>
+               </view>
+          
+            <!-- 其它品牌产品 -->
+            <view class='pro-other' wx:elif="{{status == 0}}">
+               <navigator class='pro-new' url='../productAdd/productAdd'>+ 新建产品</navigator>
+                <scroll-view class='scroll-otherh' scroll-y scroll-top="{{scrollTop}}" bindscroll="scroll">
+                  <view class='other-list' wx:for="{{otherProduct}}" wx:for-index="index"  data-index='{{index}}' >
+                     <view wx:if="{{!modify[index]}}">
+                        <image src='../../static/images/modify.png' class='modify' data-index='{{index}}' bindtap='modifytab' ></image>
+                        <view class='other-first'>
+                           <text>{{item.product_name}}</text>
+                           <text>来源: {{item.from}}</text>
+                        </view>
+                        <navigator url='../checkUser/checkUser?product_parent_id={{item.product_parent_id}}&type=2' class='other-download' >支持下单客户</navigator>
+                     </view>
+                     
+                     <view class='other-second' wx:else>
+                        <view class='other-input'>
+                           <input type='text' value='{{item.product_name}}' maxlength="20" data-key='{{index}}' bindinput='bindInput' />
+                           <text>来源: {{item.from}}</text>
+                        </view>
+                        <text class='affirm' data-key='{{index}}' bindtap='affirmtab'>确认修改</text>
+                     </view>
+                  </view>
+                  <!-- 返回顶部 -->
+                  <view class='back-top' hidden='{{flag}}' catchtap="goTop">
+                     <image src='../../static/images/back-top.png'></image>
+                  </view>
+               </scroll-view>
+            </view>
+        </view>
+  </view>
+
+  <!-- 弹窗 -->
+   <view class='pop-wrap' wx:if="{{popWrap}}">
+      <view class='pop-product'>
+         <text class='question'>该产品已存在，是否合并？</text>
+         <view class='button clearfix'>
+            <text bindtap='pop_cancel'>取消</text><text bindtap='pop_affirm'>确认</text>
+         </view>
+      </view>
+   </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

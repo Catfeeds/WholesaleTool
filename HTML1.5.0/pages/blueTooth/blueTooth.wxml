@@ -1,0 +1,22 @@
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'></text>
+</view>
+
+<view class="btn" type="primary" bindtap="startSearch"> 开始搜索 </view>
+  <view  wx:for="{{list}}" wx:for-item="item" 
+         data-title="{{item.deviceId}}" 
+         data-name="{{item.name}}" 
+         data-advertisData="{{item.advertisServiceUUIDs}}" 
+         wx:key="{{item.deviceId}}"
+         bindtap="bindViewTap">
+  <view  class="item">
+    <div class="deviceId block">{{item.deviceId}}</div>
+    <div class="name block">{{item.name}}</div>
+  </view>    
+</view>  
+ 

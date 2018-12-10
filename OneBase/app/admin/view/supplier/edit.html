@@ -1,0 +1,62 @@
+<form action="{:url()}" method="post" class="form_single">
+    <div class="box">
+      <div class="box-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>用户名</label>
+              <span>（最多32个字符）</span>
+              <input class="form-control" maxlength="32" name="name" placeholder="请输入用户名" type="text" value="{$list->name}">
+            </div>
+          </div>
+ 
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>手机号</label>
+              <span>（11位手机号码）</span>
+              <input class="form-control" oninput="if(value.length>11)value=value.slice(0,11);value=value.replace(/[\.-]/g,'')
+" name="mobile" placeholder="请输入手机号" type="number" value="{$list->mobile}">
+            </div>
+          </div>
+ 
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>密码</label>
+              <span>（密码请不要过于简单）</span>
+              <input class="form-control" name="password" placeholder="请输入密码" type="text" value="">
+            </div>
+          </div>
+ 
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>供货商地址</label>
+              <span>（供货商地址）</span>
+              <input class="form-control" name="address" placeholder="请输入地址" type="text" value="{$list->address}">
+            </div>
+          </div>
+    
+            
+          <div class="col-md-6">
+            <div class="form-group">
+                <label>优惠信息</label>
+                <span>（优惠信息）</span>
+                <input class="form-control" name="desc" placeholder="优惠信息" type="text" value="{$list->desc}">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                <label>优惠信息2</label>
+                <span>（优惠信息2）</span>
+                <input class="form-control" name="desc2" placeholder="优惠信息2" type="text" value="{$list->desc2}">
+
+            </div>
+          </div>
+            <!--更新条件id-->
+            <input  type="hidden" name="id" value="{$list->id}">
+        </div>
+      </div>
+      <div class="box-footer">
+        {include file="layout/edit_btn_group"/}
+      </div>
+    </div>
+</form>

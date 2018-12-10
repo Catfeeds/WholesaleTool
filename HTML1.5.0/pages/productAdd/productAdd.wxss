@@ -1,0 +1,52 @@
+/* pages/productAdd/productAdd.wxss */
+
+@import "../index/index.wxss";
+
+.submit{width: 100%;height: 95rpx;background: #fff;position: fixed;bottom: 0;left: 0;z-index: 100;}
+.submit .go-back{width: 100rpx;height: 100%;float:left;padding-left: 28rpx;display: block;}
+.submit .go-back image{width: 24rpx;height: 44rpx;vertical-align: top;margin-top: 25.5rpx;}
+.submit button{float:right;box-sizing: border-box; width: 200rpx;background: #ff8300;font-size: 34rpx;color: #fff;
+   text-align: center;line-height: 95rpx;border-radius: 0; 
+}
+
+
+.product-add{width: 96%;height: calc(100% - 350rpx);padding: 24rpx;background: #fff;border-radius: 15rpx;box-sizing: border-box;
+   position: fixed;top: 242rpx;left: 2%;overflow: hidden;
+ }
+ .product-add-scroll{height: 100%;}
+.add-list{padding: 24rpx;background: #f7f7f7;border-radius: 6rpx;margin-bottom: 20rpx;}
+.input-wrap{font-size: 0;width: 100%;height: 60rpx;position: relative;}
+.input-wrap input[type="text"]{width: 100%;height: 100%;border: 1px solid #c8c4c3;padding: 0 60rpx 0 20rpx;
+   box-sizing: border-box;font-size: 30rpx;color: #000;border-radius: 10rpx; 
+}
+.close-icon{width: 40rpx;height: 40rpx;font-size: 0;background: #cdcdcd;text-align: center;position: absolute;right: 12rpx;top: 10rpx;border-radius: 50%;}
+.input-wrap image{width: 26rpx;height: 26rpx;vertical-align: top;margin-top: 8rpx;}
+.pro-util{display: block;color: #333;padding: 20rpx 0;font-size: 28rpx;}
+.checkbox-label{font-size: 0;}
+.checkbox-label .checkbox{display: inline-block;vertical-align: top;width: 16.66%;font-size: 0;}
+.checkbox-label .checkbox image{width: 30rpx;height: 30rpx;vertical-align: top;margin: 4rpx 10rpx 0 0;}
+.checkbox-label .checkbox text{font-size: 28rpx;color: #333;vertical-align: top;}
+
+.add-more{width: 56%;height: 60rpx;background: #ff9700;font-size: 28rpx;color: #fff;text-align: center;line-height: 60rpx;margin: 60rpx auto 40rpx;border-radius: 6px; }
+
+/* 弹窗 */
+.pop-wrap{width: 100%;height: 100%;background: rgba(0,0,0,.5);position: fixed;left: 0;top: 0;z-index: 10000;}
+.pop-product{width: 600rpx;height: 350rpx;background: #fff;border-radius: 12rpx;padding: 45rpx;
+   box-sizing: border-box;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);
+}
+.pop-product .question{font-size: 36rpx;color: #333;font-weight: bold;display: block;margin-bottom: 150rpx;}
+.pop-product .remark{font-size: 30rpx;color: #333;margin-bottom: 15rpx;display: block;}
+.pop-product textarea{width: 100%;height: 200rpx;border: 1px solid #ccc;box-sizing: border-box;background: #f7f7f7;
+   margin-bottom: 48rpx;padding: 20rpx;font-size: 28rpx;position: static;
+}
+.pop-product .button text{display: block;width: 200rpx;height: 70rpx;line-height: 70rpx;text-align: center;
+   font-size: 30rpx;color: #fff;border-radius: 12rpx;background: #ffb400;float: left; 
+}
+.pop-product .button text:last-child{background: #ff7a00;float: right;}
+
+
+/* 确认删除弹窗 */
+.pop-product.pop-delete{width: 560rpx;height: 290rpx;}
+.pop-product.pop-delete .question{margin-bottom: 90rpx;}
+
+

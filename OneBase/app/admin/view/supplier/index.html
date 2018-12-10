@@ -1,0 +1,64 @@
+<div class="box">
+    <div class="box-header ">
+
+        <ob_link><a class="btn" href="{:url('add')}"><i class="fa fa-plus"></i> 新 增</a></ob_link>
+        &nbsp;
+        <!--<ob_link><a class="btn export" url="{:url('exportMemberList')}"><i class="fa fa-download"></i> 导 出</a></ob_link>-->
+
+        <div class="box-tools ">
+
+            <div class="input-group input-group-sm search-form">
+                <input name="name" class="pull-right search-input" value="{:input('name')}" placeholder="昵称" type="text">
+
+                <div class="input-group-btn">
+                    <button type="button" id="search" url="{:url('index')}" class="btn btn-default"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <br/>
+    </div>
+
+    <div class="box-body table-responsive">
+        <table  class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>手机号</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            {notempty name='list'}
+            <tbody>
+            {volist name='list' id='vo'}
+            <tr>
+                <td>{$vo.id}</td>
+                <td>{$vo.name}</td>
+                <td>{$vo.mobile}</td>
+                <td class="col-md-3 text-center">
+                    <ob_link><a href="{:url('edit', array('id' => $vo['id']))}" class="btn"><i class="fa fa-edit"></i> 编 辑</a></ob_link>
+                    <ob_link><a class="btn confirm ajax-get"  href="{:url('del', array('id' => $vo['id']))}"><i class="fa fa-trash-o"></i> 删 除</a></ob_link>
+                </td>
+            </tr>
+            {/volist}
+            </tbody>
+            {else/}
+            <tbody><tr class="odd"><td colspan="8" class="text-center" valign="top">{:config('empty_list_describe')}</td></tr></tbody>
+            {/notempty}
+        </table>
+    </div>
+
+    <div class="box-footer clearfix text-center">
+        {$list->render()}
+    </div>
+
+</div>
+
+<script>
+    //导出功能
+    $(".export").click(function(){
+
+        window.location.href = searchFormUrl($(".export"));
+    });
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    var login_info ={"encryptedData":"","iv":"","rawData":"","signature":"","code":""};
+    $.ajax({
+        url: "/ufs_register/index",
+        type: "POST",
+        dataType: "json",
+        async:false,
+        data: {login_info:login_info},
+        success: function (data)
+        {
+            // 执行函数
+            console.log(data);
+        },
+        error: function (data)
+        {
+            // 执行失败
+        },
+    });
+</script>
+</html>

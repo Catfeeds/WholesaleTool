@@ -1,0 +1,20 @@
+<!--pages/clearStorage/clearStorage.wxml-->
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'></text>
+</view>
+
+<view class='container'>
+  <view class="table">
+  <view class='title'>
+    <image class="icon" src='/static/images/clearStorage.png'></image>
+    <view class="title_bgName">设置</view>
+  </view>
+    <button class="login2" bindtap="clearStorage" data-page='{{pageNum}}' data-supplier_name='{{supplier_name}}' 
+    data-supplier_coupon='{{supplier_coupon}}'>一键清缓存</button>
+  </view>
+</view>

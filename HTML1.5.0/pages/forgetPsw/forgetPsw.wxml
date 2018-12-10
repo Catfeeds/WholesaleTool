@@ -1,0 +1,41 @@
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'>忘记密码</text>
+</view>
+
+<view class='container'>
+    <image class="image" src='/static/images/juxing.png' />
+    <view class="title_bgName" style="position:relative;top:165rpx">欢迎使用订单助手！</view>
+    <view class="table">
+        <view class='form'>
+            <view class="xzts">请使用账户手机号获取验证码进行密码重置</view>
+            <view class="table_inp">
+                <image class="icon" src='/static/images/phone.png'></image>
+                <input class="input" placeholder-class="placeholder" placeholder='请输入手机号' bindinput='bindPhone'></input>
+            </view>
+            <view class="table_inp input_code">
+                <image class="icon" src='/static/images/checkcode.png'></image>
+                <input class="input" placeholder-class="placeholder" placeholder='请输入验证码' bindinput='bindCode'></input>
+                 <!-- <view wx:else class="phone_btn phone_btn_dis" >{{ codeText }}</view> -->
+               <view  wx:if="{{codeShow}}"  class ="sendCode" bindtap="getCode">获取验证码</view >
+                <view wx:else class="sendCode phone_btn_dis" >{{codeTime}}s重复获取</view> 
+           </view>
+            <view class="table_inp">
+                <image class="icon" src='/static/images/password.png'></image>
+                <input class="input" placeholder-class="placeholder" placeholder='请输入新密码' bindinput='bindPassword' password="true"></input>
+            </view>
+            <view class="table_inp">
+                <image class="icon" src='/static/images/password.png'></image>
+                <input class="input" placeholder-class="placeholder" placeholder='请输入新密码' bindinput='bindPassword_sure' password="true"></input>
+            </view>
+            <!-- 自定义组件 -->
+            <view class="login" bindtap="resetPwd">
+                确认
+            </view>
+        </view>
+    </view>
+</view>

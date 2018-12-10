@@ -1,0 +1,30 @@
+<view class='container'>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+         <view class="title_txt">专属收单码</view>
+         <view class="title_border">
+          <image class="title_qrcode" src="{{ QRcodeUrl }}" bindtap='download'></image>
+         </view>
+
+      </view>
+
+    
+
+    </view>
+    <!-- 底部按钮 -->
+    <view class="bottom_btn">
+      <image class="btn_back" src="/static/images/back.png" bindtap='comback'></image>
+      <view class="yn_row">
+        <button class="yn_v"  open-type='share'>
+            <image class="btn_yn" src="/static/images/link.png"></image>
+            <text class="remark_text" >转发</text>
+        </button>
+      </view>
+    </view>
+
+   
+
+</view>

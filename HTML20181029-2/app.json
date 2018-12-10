@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/orderList/orderList",
+    "pages/orderDetail/orderDetail",
+    "pages/myQRcode/myQRcode",
+    "pages/blueTooth/blueTooth",
+    "pages/forgetPsw/forgetPsw",
+    "pages/shopOrderList/shopOrderList",
+    "pages/customer/welcome/welcome",
+    "pages/customer/regist/regist",
+    "pages/customer/bindResult/bindResult",
+    "pages/customer/newOrder/newOrder",
+    "pages/customer/allOrder/allOrder",
+    "pages/customer/notUser/notUser",
+    "pages/customer/registResult/registResult",
+    "pages/customer/orderDetail/orderDetail",
+    "pages/customer/searchShop/searchShop",
+    "pages/resetPsw/resetPsw",
+
+    "pages/clearStorage/clearStorage",
+    "pages/test/test",
+    "pages/guide/guide",
+    "pages/guide/guide2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#22292c",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#f96700",
+    "color": "#999999",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "未确认订单",
+        "iconPath": "/static/images/noyes.png",
+        "selectedIconPath": "/static/images/noyes_s.png"
+      },
+      {
+        "pagePath": "pages/orderList/orderList",
+        "text": "全部订单",
+        "iconPath": "/static/images/all.png",
+        "selectedIconPath": "/static/images/all_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的账户",
+        "iconPath": "/static/images/my.png",
+        "selectedIconPath": "/static/images/my_s.png"
+      }
+    ]
+  }
+}

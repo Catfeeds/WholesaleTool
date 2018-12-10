@@ -1,0 +1,96 @@
+<form action="{:url()}" method="post" class="form_single">
+    <div class="box">
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>产品名称</label>
+                        <!--<span class="">（文章标题名称）</span>-->
+                        <input class="form-control" name="product_name" placeholder="请输入产品名称"
+                               value="{$info['product_name']|default=''}" type="text">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>单位</label>
+                        <select name="sku_unit" class="form-control">
+                            {volist name='article_category_list' id='vo'}
+                            <option value="{$vo['name']}"
+                                {notempty name="info['sku_unit']" }
+                                    {if condition="$info['sku_unit'] eq $vo['name']" } selected="selected" {/if}
+                                {/notempty} >{$vo['name']}</option>
+                            {/volist}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>状态</label>
+                        <select name="status" class="form-control">
+                            <option value="1" {notempty name="info['status']" }{eq name="info['status']" value="1"}selected{/eq}{/notempty}>正常</option>
+                            <option value="0" {notempty name="info['status']" }{eq name="info['status']" value="0"}selected{/eq}{/notempty}>隐藏</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>排序</label>
+                        <input class="form-control" name="product_sort" placeholder="请输入排序数字"
+                               value="{$info['product_sort']|default='0'}" type="number">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>商品描述</label>
+                        <!--<span class="">（文章描述信息/简介）</span>-->
+                        <textarea class="form-control" name="product_desc" rows="4" placeholder="请输入商品描述信息/简介">{$info['product_desc']|default=''}</textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>选择供应商</label>
+                        <select multiple name="supplier_ids[]" class="form-control" id="suppliers-select">
+                            {volist name='supplier_list' id='vo'}
+                            <option value="{$vo['id']}">{$vo['name']}-{$vo['mobile']}</option>
+                            {/volist}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>产品图片</label>
+                        <br/>
+                        {assign name="cover_id" value="$info.cover_id|default='0'" /}
+                        {:widget('file/index', ['name' => 'cover_id', 'value' => $cover_id, 'type' => 'img'])}
+                    </div>
+                    <p>注：如果列表中有图片而编辑时未显示，该图为老数据兼容，重新上传可替换。</p>
+                </div>
+
+            </div>
+
+            <div class="box-footer">
+
+                <input type="hidden" name="id" value="{$info['id']|default='0'}"/>
+
+                {include file="layout/edit_btn_group"/}
+
+            </div>
+
+        </div>
+    </div>
+</form>
+<script>
+    var suppliers = {$product_suppliers};
+    $(function(){
+        var supplier_select = $('#suppliers-select');
+        $.each(suppliers,function (i,n) {
+            supplier_select.find('option[value='+n+']').attr('selected','selected');
+        })
+    })
+</script>

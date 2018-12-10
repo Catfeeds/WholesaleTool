@@ -1,0 +1,147 @@
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.table{
+  height: 740rpx;
+  padding: 14rpx;
+  position: relative;
+  top: 24rpx;
+  z-index: 9;
+}
+
+
+/* 头部导航 */
+.title{
+  height: 450rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 2px 10px #dcdbdb; 
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50rpx;
+}
+ 
+ /* 姓名 */
+ .title_name{
+   font-size: 30rpx;
+   color: #ff6a00;
+   margin-top: 80rpx;
+   font-weight: bold;
+ }
+
+/* 文本 */
+ .title_txt{
+   font-size: 32rpx;
+   color:#333333;
+   margin-top: 30rpx;
+   font-weight: bold;
+ }
+ 
+
+ .title_msg{
+   font-size: 28rpx;
+   color:#290f04;
+   margin-top: 30rpx;
+ }
+
+.title_coupon{
+   font-size: 28rpx;
+   color:#ff6a00;
+   width: 500rpx;
+   margin: 0rpx auto;
+   margin-top: 90rpx;
+}
+
+.title_bottom{
+   font-size: 28rpx;
+   color:#ff6a00;
+   width: 460rpx;
+   margin: 0rpx auto;
+   margin-bottom: 10rpx;
+}
+
+.btn{
+  width: 100%;
+  height: 70rpx;
+  text-align: center;
+  border-radius: 15rpx;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  box-shadow: 0 2px 10px #dcdbdb; 
+}
+
+.btn::after{
+   border: none;
+}
+
+.btn_1{
+  background-color: #ff6a00;
+  margin-top: 100rpx;
+}
+
+.btn_2{
+  background-color: #ff9700;
+  margin-top: 30rpx;
+}
+
+/* 头部导航 */
+.title2{
+  height: 450rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 2px 10px #dcdbdb; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 第一行 */
+.title_1{
+  margin-top: 80rpx;
+  color: #333333;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+/* 第二行 */
+.title_2{
+  margin-top: 20rpx;
+  color: #333333;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+/* 第三行 */
+.title_3{
+  color: #ff6a00;
+  font-size: 30rpx;
+  margin-top: 100rpx;
+}
+
+/* 第四行 */
+.title_4{
+  color: #ff6a00;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.bottomMsgClass{
+  margin-top: 325rpx;  
+}
+
+.clearStorage{
+  position: fixed;
+  top: 20rpx;
+  right: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 999;
+}
+

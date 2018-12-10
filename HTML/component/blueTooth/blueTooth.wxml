@@ -1,0 +1,16 @@
+
+<slot bindtap='search'></slot>
+
+<!-- 弹出层 -->
+<zan-popup show="{{ modelShow }}">
+  <view class="model_reader_v">
+      <view class="reader_3">搜索蓝牙</view>
+      <view  wx:for="{{list}}" wx:for-item="item"  data-title="{{item.deviceId}}"  data-name="{{item.name}}" data-advertisData="{{item.advertisServiceUUIDs}}" wx:key="{{item.deviceId}}" bindtap="bindViewTap">
+        <view  class="item">
+          <div class="deviceId block">{{item.deviceId}}</div>
+          <div class="name block">{{item.name}}</div>
+        </view>
+      </view>
+  </view>
+  <image src='/static/images/close.png' class='closeImg' bindtap='closeReader'></image>
+</zan-popup>

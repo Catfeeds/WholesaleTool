@@ -1,0 +1,41 @@
+<view class='container' wx:if="{{ modelShow }}">
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <image class="clearStorage" bindtap="clearStorage" data-supplier_id="{{supplier_id}}" data-supplier_name="{{supplier_name}}"  
+    data-supplier_coupon="{{supplier_coupon}}"  src='/static/images/clearStorage2.png' />
+
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+         <view class="title_name">{{ supplier_name }}</view>
+         <view class="title_txt">邀请您加入他的订单小程序！</view>
+         <view class="title_msg">扫码下单，灵活方便。</view>
+       <view wx:if="{{supplier_coupon}}">
+         <view class="title_coupon">{{ supplier_coupon }}</view>
+         <view class="title_bottom">持续下单还可获得更多奖励。</view>
+         </view>
+      </view>
+
+      <button class="btn btn_1" data-index="0" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">马上加入</button>
+      <button class="btn btn_2" data-index="1" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">我不是此供应商的用户</button>
+    </view>
+    <bottomMsg my-class="bottomMsgClass"></bottomMsg>
+</view>
+<view wx:else class="container">
+</view>
+
+<!-- 错误提示 -->
+  <view class='container' wx:if="{{ errorShow }}">
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title2">
+            <view class="title_1">抱歉!</view>
+            <view class="title_2">您没有足够的权限或链接错误！</view>
+            <view class="title_3">如有任何问题请联系客服</view>
+            <view class="title_2" bindtap="call">021-34159566</view>
+      </view>
+
+    </view>
+  </view>
+  

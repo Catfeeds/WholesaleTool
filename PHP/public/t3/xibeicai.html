@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小程序指引</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript">
+        document.querySelector('html').style.fontSize = window.screen.width / 20 + 'px';
+        window.onresize = function () {
+            document.querySelector('html').style.fontSize = window.screen.width / 20 + 'px';
+        };
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            -webkit-overflow-scrolling: touch;
+            　　　　overflow-scrolling: touch;
+            overflow-x: hidden;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+        }
+
+        li img {
+            width: 100%;
+            margin-bottom: -0.3rem;
+        }
+
+        #video1, #video2 {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .video1, .video2 {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .close1, .close2 {
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#playVideo1").click(function () {
+                console.log(1);
+                var aud1 = document.querySelector("#video1");
+                var div1 = document.querySelector(".video1");
+                div1.style.display = 'block';
+                aud1.style.display = 'block';
+                aud1.play();
+            });
+
+            $("#playVideo2").click(function () {
+                console.log(2);
+                var aud2 = document.querySelector("#video2");
+                var div2 = document.querySelector(".video2");
+                div2.style.display = 'block';
+                aud2.style.display = 'block';
+                aud2.play();
+                aud2.addEventListener("ended", function () {
+                    console.log("结束");
+                    aud2.style.display = 'none';
+                })
+            });
+
+            $(".close1").click(function () {
+                var div1 = document.querySelector(".video1");
+                div1.style.display = 'none';
+                var aud1 = document.querySelector("#video1");
+                aud1.pause();
+            })
+
+            $(".close2").click(function () {
+                var div2 = document.querySelector(".video2");
+                div2.style.display = 'none';
+                var aud2 = document.querySelector("#video2");
+                aud2.pause();
+            })
+        })
+    </script>
+</head>
+<body>
+<ul>
+    <li>
+        <img src="images/1.png">
+    </li>
+    <li>
+        <img src="images/2.png">
+    </li>
+    <li id="playVideo1">
+        <img src="images/3.png">
+    </li>
+    <li id="playVideo2">
+        <img src="images/4.png">
+    </li>
+    <li>
+        <img src="images/5.png">
+    </li>
+</ul>
+<div class="video1">
+    <video id="video1" src="https://osapp.unileverfoodsolutions.com.cn/uploads/videos/client_v1.mp4" controls></video>
+    <a class="close1">X</a>
+</div>
+<div class="video2">
+    <video id="video2" src="https://osapp.unileverfoodsolutions.com.cn/uploads/videos/supplier_v1.mp4" controls></video>
+    <a class="close2">X</a>
+</div>
+</body>
+</html>

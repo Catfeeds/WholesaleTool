@@ -1,0 +1,20 @@
+<view class='container'>
+  <!-- 搜索头部 -->
+  <view class="search_top">
+      <!-- 搜索外部框 -->
+      <view class="input_v">
+          <image src="/static/images/search.png" class="search_pic"></image>
+          <input class="search_input" placeholder='输入餐厅名进行搜索...' placeholder-class='placeholderClass' value='{{ name }}' bindinput='searchShop'></input>
+          <image src="/static/images/closeSearch.png" class="close_pic" wx:if="{{ name }}" bindtap='cleanName'></image>
+      </view>
+      <view class="search_text" bindtap='toback'>保存</view>
+  </view>
+  <!-- 餐厅列表 -->
+  <scroll-view scroll-y style="height:{{ scrollHeight }}rpx;">
+    <view class="shopItem" wx:for="{{ shopList }}" data-index = "{{ index }}" bindtap='choiceShop'>
+        <view class="shopName" data-index = "{{ index }}">{{ item.shopName }}</view>
+        <view class="shopAddr" data-index = "{{ index }}">{{ item.address }}</view>
+    </view>
+  </scroll-view>
+  
+</view>

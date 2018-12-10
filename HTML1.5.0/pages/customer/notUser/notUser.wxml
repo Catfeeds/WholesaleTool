@@ -1,0 +1,104 @@
+<!-- 微信导航栏 -->
+<view class='wx-nav'>
+   <view class='nav-back'>
+      <image src='/static/images/back-icon.png'></image>
+      <text>返回</text>
+   </view>
+   <text class='showTitle'>不是用户-注册</text>
+</view>
+
+<view class='container'>
+
+    <image class="image" src='/static/images/juxing.png'/>
+    <view class="table">
+      <!-- 头部导航 -->
+      <view class="title">
+          <!-- 选择 -->
+          <radio-group class="input_class radio_group" bindchange="radioChange">
+            <label class="radio" >
+              <radio value="0" checked="true" color="#ff9700"/>批发商
+            </label>
+            <label class="radio" >
+              <radio value="1" color="#ff9700"/>终端用户
+            </label>
+          </radio-group>
+          <!-- 姓名 -->
+          <input class="input_class" placeholder-class='placeholder-input' placeholder='姓名' bindinput ="inputName"></input>
+          <!-- 手机号 -->
+          <view class="input_class input_phone">
+              <input class="phone_in" placeholder-class='placeholder-input' type="number" placeholder='手机号' bindinput ="inputPhone" maxlength="11"></input>
+              <view wx:if="{{ codeShow }}" class="phone_btn" bindtap='getCode'>{{ codeText }}</view>
+              <view wx:else class="phone_btn" >{{ codeText }}</view>
+          </view>
+          <!-- 验证码 -->
+          <input class="input_class" placeholder-class='placeholder-input' placeholder='输入验证码' bindinput ="inputCode"></input>
+
+          <!-- 终端用户 -->
+          <block wx:if="{{ roleIndex==1 }}">
+              <view class="placeholder-input shopTitle">您所在餐厅</view>
+              <!-- 手动输入/附近 -->
+              <view class="shopSwitch">
+                <view class="title_t {{ shopSwitch==titleIndex?'item_select':'' }}" wx:for="{{titleLable}}" wx:for-item="titleItem" wx:for-index="titleIndex">
+                    <view class="t_tab {{ shopSwitch==titleIndex?'t_select':'' }}" data-shopswitch="{{ titleItem.shopSwitch }}" bindtap='changeStatus'>{{ titleItem.name }}</view>
+                </view>
+              </view> 
+
+              <!-- 区域 -->
+              <input class="input_class" placeholder-class='placeholder-input' value="{{address.full_region}}" disabled="true" bindtap="chooseRegion" placeholder="省份、城市、区县"/>
+              <!-- 具体地址 -->
+              <input class="input_class" placeholder-class='placeholder-input' placeholder="具体地址" bindinput ="inputAddr"/>
+              <!-- 餐厅名称 -->
+              <input class="input_class" placeholder-class='placeholder-input' placeholder="餐厅名称" bindinput ="inputShopName"/>
+               <!-- 业务类型 -->
+              <picker class="input_class" bindchange="bindBusiChange" value="0" range="{{busiArray}}" range-key="name">
+                <view class="picker avg_cons">
+                  您所在餐厅的业务类型 {{busiArray[busiSelectIndex].name}}
+                </view>
+              </picker>
+              <!-- 人均消费 -->
+              <view class="input_class avg_cons">
+                <text class="cons_text">您所在餐厅的人均消费</text>
+                <input class="input_class cons_input" bindinput ="inputAvg"></input>
+                <text>元/人</text>
+              </view>
+
+          </block>
+
+          <!-- 批发商 -->
+          <block wx:else>
+              <!-- 门店名称 -->
+              <input class="input_class" placeholder-class='placeholder-input' placeholder='门店名称' bindinput ="inputShopName"></input>
+              <view class="placeholder-input shopTitle">门店地址</view>
+               <!-- 区域 -->
+              <input class="input_class" placeholder-class='placeholder-input' value="{{address.full_region}}" disabled="true" bindtap="chooseRegion" placeholder="省份、城市、区县"/>
+              <!-- 详细地址 -->
+              <input class="input_class" placeholder-class='placeholder-input' placeholder='详细地址' bindinput ="inputAddr"></input>
+          </block>
+
+      </view>
+
+      <view class="btn btn_2" bindtap='subForm'>提交</view>
+    
+
+      <!-- 区域选择弹框 -->
+       <view class="region-select" wx:if="{{openSelectRegion}}">
+          <view class="hd">
+            <view class="region-selected">
+              <view class="item {{item.id == 0 ? 'disabled' : ''}} {{(regionType -1) === index ? 'selected' : ''}}" bindtap="selectRegionType" data-region-type-index="{{index}}" wx:for="{{selectRegionList}}" wx:key="{{item.id}}">{{item.name}}</view>
+            </view>
+            <view class="done {{selectRegionDone ? '' : 'disabled'}}" bindtap="doneSelectRegion">确定</view>
+          </view>
+
+          <view class="bd">
+            <scroll-view scroll-y="true" class="region-list">
+              <view class="item {{item.selected ? 'selected' : ''}}" bindtap="selectRegion" data-region-index="{{index}}" wx:for="{{regionList}}" wx:key="{{item.id}}">{{item.name}}</view>
+            </scroll-view>
+          </view>
+
+        </view>
+        <view class="bg-mask" bindtap="cancelSelectRegion" wx:if="{{openSelectRegion}}"></view>
+      <!--  -->
+
+    </view>
+
+</view>

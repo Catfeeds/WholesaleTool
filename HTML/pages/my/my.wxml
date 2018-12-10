@@ -1,0 +1,51 @@
+<view class='container'>
+    <!-- 头部背景 -->
+    <view class="title_bg">
+      <image src='/static/images/logo.png' class="title_bgPic"></image>
+      <view class="title_bgName">{{ baseInfo.name }}</view>
+    </view>
+
+    <image class="image" src='/static/images/juxing.png'/>
+        <view class="table">
+          <!-- 头部导航 -->
+          <view class="top">
+            <view class="top_t" wx:for="{{titleLable}}" wx:for-item="titleItem" wx:for-index="titleIndex">
+                <view class="t_tab {{ status==titleIndex?'t_select':'' }}" data-status="{{ titleItem.status }}" bindtap='changeStatus'>{{ titleItem.name }}</view>
+            </view>
+          </view>
+
+          <!-- 专属收单码 -->
+          <block wx:if="{{ status==0 }}">
+              <view class="qrcode_v">
+                <view class="title_border">
+                  <image class="title_qrcode" src="{{ QRcodeUrl }}" bindtap='download' binderror='qrcodeError' bindtap='download'></image>
+                </view>
+        <!-- 底部消息 -->
+        <bottomMsg my-class="{{ status==0?'bottomMsgClass':'bottomMsgClass80' }}"></bottomMsg>   
+              </view>               
+          </block>
+          <!-- 我的客户 -->
+          <block wx:else>
+                <!-- 主体 -->
+                <scroll-view class="scroll-v" scroll-y style="height: {{ scrollHeight-70 }}px;" >
+                  <!-- 头部导航 -->
+                  <navigator class="title" wx:for="{{ shopList }}"  url='/pages/shopOrderList/shopOrderList?shopName={{ item.restaurant_name }}&shopId={{ item.id }}'>
+                      <!-- <view class="title_name">{{ item.nickname }}--{{ item.mobile }}</view> -->
+                      <view class="title_name">{{ item.restaurant_name }}</view>
+                      <view class="title_addr">{{ item.address }}</view>
+                  </navigator>
+
+        <!-- 底部消息 -->
+        <bottomMsg></bottomMsg>    
+
+                </scroll-view>
+          </block>      
+
+        </view>
+
+</view>
+
+<!-- 弹出层 询问删除商品-->
+<view class='popup' wx:if="{{ ShareShow }}" bindtap="togglePopup">
+    <image src="/static/guide1/sh_share.png" class="sharePic"></image>
+</view>

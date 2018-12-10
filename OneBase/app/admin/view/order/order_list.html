@@ -1,0 +1,84 @@
+<div class="box">
+  <div class="box-header">
+    <!--<ob_link><a class="btn" href="{:url('articleAdd')}"><i class="fa fa-plus"></i> 新 增</a></ob_link>-->
+    
+    <div class="box-tools">
+        <div class="input-group input-group-sm search-form">
+            <label >订单状态:&nbsp;&nbsp;&nbsp;</label>
+            <select name="search_order_status" style="height: 30px;" >
+                <option value="0" {if condition="input('search_order_status') eq 0 "}selected{/if} >全部</option>
+                <option value="1" {if condition="input('search_order_status') eq 1 "}selected{/if} >未确认</option>
+                <option value="2" {if condition="input('search_order_status') eq 2 "}selected{/if} >已确认</option>
+                <option value="3" {if condition="input('search_order_status') eq 3 "}selected{/if} >拒绝</option>
+            </select>
+            <input name="search_data" class="pull-right search-input" value="{:input('search_data')}" placeholder="订单ID|终端ID|供货商ID" type="text">
+            <div class="input-group-btn">
+              <button type="button" id="search" url="{:url('orderlist')}" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <br/>
+  </div>
+  <div class="box-body table-responsive">
+    <table  class="table table-bordered table-hover">
+      <thead>
+      <tr>
+          <th class="checkbox-select-all">
+              <label>
+                <input class="flat-grey js-checkbox-all" type="checkbox">
+              </label>
+          </th>
+          <th>ID</th>
+          <th>订单编号</th>
+          <th>终端用户</th>
+          <th>供应商</th>
+          <th>订单类型</th>
+          <th>买家备注</th>
+          <th>订单状态</th>
+          <th>创建时间</th>
+          <th>修改时间</th>
+          <th>卖家备注</th>
+          <th class="status-th">状态</th>
+          <th>操作</th>
+      </tr>
+      </thead>
+      
+      {notempty name='list'}
+        <tbody>
+            {volist name='list' id='vo'}
+                <tr>
+                  <td>
+                    <label>
+                        <input class="flat-grey" type="checkbox" name="ids" value="{$vo.id}">
+                    </label>
+                    <td>{$vo.id}</td>
+                  <td>{$vo.order_number}</td>
+                  <td>{$vo.client_id}-{$vo.nickname}-{$vo.mobile}</td>
+                    <td>{$vo.supplier_id}-{$vo.supplier_name}-{$vo.supplier_mobile}</td>
+                    <td>{if condition="$vo.order_type eq 0"}普通订单{elseif condition="$vo.order_type eq 1" /}重要订单{else /}异常订单{/if}</td>
+                    <td>{$vo.comments}</td>
+                    <td>{if condition="$vo.order_status eq 1"}未确认{elseif condition="$vo.order_status eq 2" /}确认{else /}拒绝{/if}</td>
+                  <td>{$vo.created_at|date="Y-m-d H:i:s",###}</td>
+                    <td>{$vo.updated_at|date="Y-m-d H:i:s",###}</td>
+                    <td>{$vo.remark}</td>
+                  <td><ob_link><a class="ajax-get" href="{:url('setStatus', array('ids' => $vo['id'], 'status' => (int)!$vo['status']))}">{$vo.status_text}</a></ob_link></td>
+                  <td class="col-md-2 text-center">
+                      <ob_link><a href="{:url('orderDetail2', array('id' => $vo['id']))}" class="btn "><i class="fa fa-edit"></i> 详情</a></ob_link>
+
+                      <!--<ob_link><a href="{:url('orderEdit', array('id' => $vo['id']))}" class="btn "><i class="fa fa-edit"></i> 编辑</a></ob_link>-->
+                      <!--<ob_link><a class="btn confirm ajax-get" href="{:url('setStatus', array('ids' => $vo['id'], 'status' => $Think.DATA_DELETE))}"><i class="fa fa-trash-o"></i> 删 除</a></ob_link>-->
+                  </td>
+                </tr>
+            {/volist}
+        </tbody>
+        {else/}
+        <tbody><tr class="odd"><td colspan="8" class="text-center" valign="top">{:config('empty_list_describe')}</td></tr></tbody>
+      {/notempty}
+    </table>
+
+    {include file="layout/batch_btn_group"/}
+  </div>
+  <div class="box-footer clearfix text-center">
+      {$list->render()}
+  </div>
+</div>

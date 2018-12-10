@@ -1,0 +1,203 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.1",
+	"appid": "wx06584f9a2c9099e3",
+	"projectname": "Kevin%E8%AE%A2%E5%8D%95%E6%B5%8B%E8%AF%95%E7%89%88",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 26,
+			"list": [
+				{
+					"id": -1,
+					"name": "主页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "订单详情",
+					"pathName": "pages/orderDetail/orderDetail",
+					"query": "orderId=43"
+				},
+				{
+					"id": -1,
+					"name": "全部订单",
+					"pathName": "pages/orderList/orderList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的账户",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专属收单码",
+					"pathName": "pages/myQRcode/myQRcode",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "客户-受邀信息",
+					"pathName": "pages/customer/welcome/welcome",
+					"query": "supplier_id=4"
+				},
+				{
+					"id": -1,
+					"name": "客户-注册",
+					"pathName": "pages/customer/regist/regist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-绑定结果",
+					"pathName": "pages/customer/bindResult/bindResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-新建订单",
+					"pathName": "pages/customer/newOrder/newOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-不是用户-注册",
+					"pathName": "pages/customer/notUser/notUser",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-注册结果",
+					"pathName": "pages/customer/registResult/registResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-全部订单",
+					"pathName": "pages/customer/allOrder/allOrder",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "客户-订单详情",
+					"pathName": "pages/customer/orderDetail/orderDetail",
+					"query": "orderId=35"
+				},
+				{
+					"id": -1,
+					"name": "忘记密码",
+					"pathName": "pages/forgetPsw/forgetPsw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-搜索餐厅",
+					"pathName": "pages/customer/searchShop/searchShop",
+					"query": "name=哇哈哈"
+				},
+				{
+					"id": -1,
+					"name": "测试蓝牙",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "全部订单-客户",
+					"pathName": "pages/customer/allOrder/allOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订货商-登录",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "welcome",
+					"pathName": "pages/customer/welcome/welcome",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 20,
+					"name": "bindResult",
+					"pathName": "pages/customer/bindResult/bindResult",
+					"query": ""
+				},
+				{
+					"id": 21,
+					"name": "更改终端新增订单",
+					"pathName": "pages/customer/newOrder - 0919/newOrder",
+					"query": ""
+				},
+				{
+					"id": 22,
+					"name": "二改终端新增订单",
+					"pathName": "pages/customer/newOrder - 0921/newOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户-新建订单",
+					"pathName": "pages/index -0927/index",
+					"query": ""
+				},
+				{
+					"id": 24,
+					"name": "三改新建订单根据像素比",
+					"pathName": "pages/customer/newOrder - 0927/newOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "滑动引导层",
+					"pathName": "pages/guide/guide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自定义组件滑动引导层",
+					"pathName": "component/guide/guide",
+					"query": ""
+				}
+			]
+		}
+	}
+}

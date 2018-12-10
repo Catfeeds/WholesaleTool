@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "enablePullDownRefresh": false,
+   "disableScroll": true,
+  "backgroundColor": "#f1e9e2",
+  "usingComponents": {
+    "zan-popup": "/component/zanui/dist/popup/index",
+    "zan-stepper": "/component/zanui/dist/stepper/index",
+    "blueTooth": "/component/blueTooth/blueTooth",
+    "bottomMsg": "/component/bottomMsg2/bottomMsg2"
+    
+  }
+}

@@ -1,0 +1,2614 @@
+---------------------------------------------------------------
+[ 2018-11-20T14:36:11+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] www.snaketest.com/favicon.ico [运行时间：0.071097s][吞吐率：14.07req/s] [内存消耗：1,592.29kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000406s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006673s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/wxapi/public/index.php/ufs_order/add_order',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:33+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.044181s][吞吐率：22.63req/s] [内存消耗：1,592.79kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000116s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005760s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:37+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.033155s][吞吐率：30.16req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002860s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:38+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.034388s][吞吐率：29.08req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002629s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:39+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.031801s][吞吐率：31.45req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002714s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:39+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.033030s][吞吐率：30.28req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002586s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:39+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.033580s][吞吐率：29.78req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002719s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:40+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.034067s][吞吐率：29.35req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002770s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:40+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.037048s][吞吐率：26.99req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002750s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:43+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.033838s][吞吐率：29.55req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003585s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:43+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.033369s][吞吐率：29.97req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002736s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:43+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.037460s][吞吐率：26.70req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002680s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:44+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.035671s][吞吐率：28.03req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002656s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:44+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.031637s][吞吐率：31.61req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002746s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:46+08:00 ] 127.0.0.1 GET /public/admin.php/index/index.html
+[ info ] www.snaketest.com/public/admin.php/index/index.html [运行时间：0.033663s][吞吐率：29.71req/s] [内存消耗：1,594.05kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002756s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'admin.php',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/public/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:56+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.snaketest.com/admin.php/index/index.html [运行时间：0.083405s][吞吐率：11.99req/s] [内存消耗：2,377.55kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002698s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003796s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000767s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:25:59+08:00 ] 127.0.0.1 GET /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.063911s][吞吐率：15.65req/s] [内存消耗：2,640.13kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002706s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001422s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000318s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:00+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542702359
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542702359 [运行时间：0.041285s][吞吐率：24.22req/s] [内存消耗：2,469.48kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002588s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542702359',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001334s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000339s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:24+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.039589s][吞吐率：25.26req/s] [内存消耗：1,592.53kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000106s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004206s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:24+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.041415s][吞吐率：24.15req/s] [内存消耗：1,592.52kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003584s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:24+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.030823s][吞吐率：32.44req/s] [内存消耗：1,592.53kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002719s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:32+08:00 ] 127.0.0.1 POST /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：21.142702s][吞吐率：0.05req/s] [内存消耗：3,182.60kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003093s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'content-length' => '75',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+  '__token__' => 'ed1c8436e08143fbd66713d99295accb',
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001407s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-11-20T16:26:36+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.032924s][吞吐率：30.37req/s] [内存消耗：1,592.58kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002841s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540890484; PHPSESSID=6o4ulu7eq9fe6qj31jmjbhgdns',
+  'connection' => 'close',
+  'origin' => 'null',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:50+08:00 ] 127.0.0.1 GET /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.080985s][吞吐率：12.35req/s] [内存消耗：2,512.23kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004944s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001681s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000401s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:26:51+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542702410
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542702410 [运行时间：0.047396s][吞吐率：21.10req/s] [内存消耗：2,469.66kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003906s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542702410',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002244s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000326s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:05+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.041120s][吞吐率：24.32req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002994s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:05+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.043847s][吞吐率：22.81req/s] [内存消耗：1,592.40kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002986s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:06+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.034745s][吞吐率：28.78req/s] [内存消耗：1,592.45kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002646s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:06+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.036633s][吞吐率：27.30req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003324s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:23+08:00 ] 127.0.0.1 POST /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：21.066441s][吞吐率：0.05req/s] [内存消耗：3,183.09kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002772s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.snaketest.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '75',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+  '__token__' => 'dd3c6ad0cd0f855d5460b59e3102d9ee',
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002921s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-11-20T16:27:23+08:00 ] 127.0.0.1 GET /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.209466s][吞吐率：4.77req/s] [内存消耗：2,512.93kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002724s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001689s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000894s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:24+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.045932s][吞吐率：21.77req/s] [内存消耗：1,592.45kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003772s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:24+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.056713s][吞吐率：17.63req/s] [内存消耗：1,592.40kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009665s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:24+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.058765s][吞吐率：17.02req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007136s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:24+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542702443
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542702443 [运行时间：0.051713s][吞吐率：19.34req/s] [内存消耗：2,469.66kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002863s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542702443',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002565s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000295s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:27:25+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.040639s][吞吐率：24.61req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002869s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:28:06+08:00 ] 127.0.0.1 POST /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：21.110606s][吞吐率：0.05req/s] [内存消耗：3,183.09kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004832s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.snaketest.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '75',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+  '__token__' => '4ad30e3addadea4890d327b0be43ecb6',
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001707s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-11-20T16:31:58+08:00 ] 127.0.0.1 GET /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.063967s][吞吐率：15.63req/s] [内存消耗：2,512.93kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004802s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001658s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000412s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:31:58+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.043170s][吞吐率：23.16req/s] [内存消耗：1,592.40kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002684s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:31:58+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542702718
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542702718 [运行时间：0.052150s][吞吐率：19.18req/s] [内存消耗：2,469.66kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003202s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542702718',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004421s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000326s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:31:59+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.060309s][吞吐率：16.58req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003190s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:31:59+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.035586s][吞吐率：28.10req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000100s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003053s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:31:59+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.033872s][吞吐率：29.52req/s] [内存消耗：1,592.45kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000092s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002924s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:32:02+08:00 ] 127.0.0.1 GET /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.065915s][吞吐率：15.17req/s] [内存消耗：2,513.02kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004661s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001682s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000395s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:32:02+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.050371s][吞吐率：19.85req/s] [内存消耗：1,592.40kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007247s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+File
+---------------------------------------------------------------
+[ 2018-11-20T16:32:02+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.049677s][吞吐率：20.13req/s] [内存消耗：1,592.41kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006558s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:32:02+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542702722
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542702722 [运行时间：0.050997s][吞吐率：19.61req/s] [内存消耗：2,469.66kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005953s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542702722',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001622s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000360s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:32:03+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.033624s][吞吐率：29.74req/s] [内存消耗：1,592.45kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002750s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:32:34+08:00 ] 127.0.0.1 POST /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：21.127117s][吞吐率：0.05req/s] [内存消耗：3,183.14kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004075s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.snaketest.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '87',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+  '__token__' => '41309a1e8b74818529b497945823e895',
+  'username' => 'admin',
+  'password' => 'admin123',
+  'keeplogin' => '1',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005294s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-11-20T16:37:34+08:00 ] 127.0.0.1 GET /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.085867s][吞吐率：11.65req/s] [内存消耗：2,519.86kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005659s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001542s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000498s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:34+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.048939s][吞吐率：20.43req/s] [内存消耗：1,599.33kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003399s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:34+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.054271s][吞吐率：18.43req/s] [内存消耗：1,599.34kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005012s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:34+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.063368s][吞吐率：15.78req/s] [内存消耗：1,599.34kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007506s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:34+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542703054
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542703054 [运行时间：0.056392s][吞吐率：17.73req/s] [内存消耗：2,476.59kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004062s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542703054',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001588s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000385s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:35+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.041115s][吞吐率：24.32req/s] [内存消耗：1,599.38kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002841s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 POST /admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html
+[ info ] www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html [运行时间：0.151126s][吞吐率：6.62req/s] [内存消耗：3,257.29kb] [文件加载：78]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003234s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.snaketest.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '87',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin.php/index/index.html',
+  '__token__' => '9495304cfa910420f4e80d4ec717ecfd',
+  'username' => 'admin',
+  'password' => 'admin123',
+  'keeplogin' => '1',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002622s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.034214s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001723s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_admin` [ RunTime:0.025634s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] UPDATE `tb_admin`  SET `logintime`=1542703067,`token`='9251fef3-2a10-45c6-9694-2b606782dcac',`updatetime`=1542703067  WHERE  `id` = 1 [ RunTime:0.003242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_admin_log` [ RunTime:0.028882s ]
+[ sql ] [ SQL ] INSERT INTO `tb_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/admin.php\\/index\\/index.html\",\"__token__\":\"9495304cfa910420f4e80d4ec717ecfd\",\"username\":\"admin\",\"keeplogin\":\"1\"}' , '/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' , '127.0.0.1' , 1542703067) [ RunTime:0.003863s ]
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.snaketest.com/admin.php/index/index.html [运行时间：0.217695s][吞吐率：4.59req/s] [内存消耗：3,699.26kb] [文件加载：90]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003265s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/login?url=%2Fadmin.php%2Findex%2Findex.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003447s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000313s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001181s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.023987s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.020337s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.001452s ]
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /admin.php/dashboard?addtabs=1
+[ info ] www.snaketest.com/admin.php/dashboard?addtabs=1 [运行时间：0.140630s][吞吐率：7.11req/s] [内存消耗：3,535.03kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002971s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002235s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000373s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.027725s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.026269s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `tb_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000756s ]
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.056936s][吞吐率：17.56req/s] [内存消耗：1,600.15kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004133s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.081504s][吞吐率：12.27req/s] [内存消耗：1,600.14kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003060s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=index&v=1542703067
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=index&v=1542703067 [运行时间：0.060855s][吞吐率：16.43req/s] [内存消耗：2,478.46kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003183s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1542703067',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003415s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000533s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.041468s][吞吐率：24.11req/s] [内存消耗：1,600.14kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007153s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:47+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.044873s][吞吐率：22.29req/s] [内存消耗：1,600.15kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007151s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:48+08:00 ] 127.0.0.1 GET /assets/css/skins/skin-green.css.map
+[ info ] www.snaketest.com/assets/css/skins/skin-green.css.map [运行时间：0.053783s][吞吐率：18.59req/s] [内存消耗：1,599.70kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003084s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:48+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.055170s][吞吐率：18.13req/s] [内存消耗：1,600.15kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003453s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:48+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=dashboard&v=1542703067
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=dashboard&v=1542703067 [运行时间：0.062398s][吞吐率：16.03req/s] [内存消耗：2,477.91kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003123s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/dashboard?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1542703067',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001494s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000386s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:55+08:00 ] 127.0.0.1 GET /admin.php/order/index/index?addtabs=1
+[ info ] www.snaketest.com/admin.php/order/index/index?addtabs=1 [运行时间：0.106349s][吞吐率：9.40req/s] [内存消耗：3,487.59kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004185s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order.index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/order/index/index?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001349s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/order/index.php
+[ info ] [ RUN ] app\admin\controller\order\Index->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\order\Index.php ]
+[ info ] [ VIEW ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\view\order\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000300s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011327s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.014229s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.013446s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `tb_auth_rule` WHERE  `name` = 'order/index' LIMIT 1 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2018-11-20T16:37:55+08:00 ] 127.0.0.1 GET /assets/css/bootstrap.css.map
+[ info ] www.snaketest.com/assets/css/bootstrap.css.map [运行时间：0.048422s][吞吐率：20.65req/s] [内存消耗：1,600.15kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003677s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:55+08:00 ] 127.0.0.1 GET /assets/css/backend.css.map
+[ info ] www.snaketest.com/assets/css/backend.css.map [运行时间：0.071099s][吞吐率：14.06req/s] [内存消耗：1,600.14kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002902s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+T File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:55+08:00 ] 127.0.0.1 GET /admin.php/ajax/lang?callback=define&controllername=order.index&v=1542703075
+[ info ] www.snaketest.com/admin.php/ajax/lang?callback=define&controllername=order.index&v=1542703075 [运行时间：0.046471s][吞吐率：21.52req/s] [内存消耗：2,476.23kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002785s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/order/index/index?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'order.index',
+  'v' => '1542703075',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001352s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/order/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000301s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T16:37:56+08:00 ] 127.0.0.1 GET /admin.php/order/index/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542703075688
+[ info ] www.snaketest.com/admin.php/order/index/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1542703075688 [运行时间：0.182226s][吞吐率：5.49req/s] [内存消耗：3,374.93kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003844s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order.index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.snaketest.com/admin.php/order/index/index?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1542703075688',
+)
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001470s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\public/../application/admin/lang/zh-cn/order/index.php
+[ info ] [ RUN ] app\admin\controller\order\Index->index[ C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\application\admin\controller\order\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000306s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006324s ] mysql:host=127.0.0.1;port=3306;dbname=db_ufs_order;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_group_access` [ RunTime:0.021616s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `tb_auth_group_access` `aga` LEFT JOIN `tb_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_auth_rule` [ RunTime:0.016484s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `tb_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_order` [ RunTime:0.020157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_order` `order` ORDER BY `order`.`id` DESC LIMIT 0,10 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_supplier` [ RunTime:0.014398s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_user` [ RunTime:0.021903s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_supplier` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_user` WHERE  `id` = 387 LIMIT 1 [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2018-11-20T16:37:56+08:00 ] 127.0.0.1 GET /assets/css/fastadmin.css.map
+[ info ] www.snaketest.com/assets/css/fastadmin.css.map [运行时间：0.051232s][吞吐率：19.52req/s] [内存消耗：1,600.15kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002703s ]
+[ info ] [ LANG ] C:\Users\nicole.hui\Desktop\ufs_wxapp1.5.0\trunk\SRC\PHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_afc2b8bbe5afca7b1c77c05445eadd98=1540884059,1541383798; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1541660420; PHPSESSID=9nirbqeb81e9tir5m1809kpk5h; keeplogin=1%7C86400%7C1542789467%7C5b6e4f32931bdd6f771489cfa6fe3490',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.snaketest.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

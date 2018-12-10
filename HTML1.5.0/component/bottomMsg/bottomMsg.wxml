@@ -1,0 +1,5 @@
+<view class="content my-class" >
+  <text class="text_1">客服电话</text>
+  <text class="text_2" bindtap="call">021-34159566 </text>
+    <text class="text_1">周一~周五 9:00-18:00</text>
+</view>

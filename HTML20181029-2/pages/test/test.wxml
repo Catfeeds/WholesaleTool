@@ -1,0 +1,16 @@
+<!--pages/test/test.wxml-->
+<view bindtap='testPrint' data-index="1" class="test">测试打印</view>
+
+<form bindsubmit="submitInfo" report-submit='true' >
+  <button form-type="submit" type="default" size="mini">提交</button>
+</form>
+
+ <!--pages/a/a.wxml-->
+<text>pages/a/a.wxml</text>
+<button bindtap='close'>close</button>
+
+
+<web-view src="https://mp.weixin.qq.com/"></web-view>
+
+
+
